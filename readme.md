@@ -1,3 +1,13 @@
-#Test header
-Hello
-Checking to see if git is working
+# Eng114_DevOps
+
+Git:
+
+pwd - check drive
+
+ls - check contents
+
+nano - make file
+
+gc - open file
+
+
