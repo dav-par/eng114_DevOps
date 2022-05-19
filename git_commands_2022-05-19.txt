@@ -1,2 +1,8 @@
 Common git commands:
 
+ls = showfolders
+    -a = show hidden files
+rv
+commit
+touch <file name> - make file
+nano <file name> - make and edit file
