@@ -1,4 +1,13 @@
 # Eng114_DevOps
 
-Eng114 DevOps
+Git:
+
+pwd - check drive
+
+ls - check contents
+
+nano - make file
+
+gc - open file
+
 
