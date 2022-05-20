@@ -1,2 +1,6 @@
 Common git commands:
 
+
+
+force pull and reset a branch:
+git reset --hard origin/main
