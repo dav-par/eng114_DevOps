@@ -20,7 +20,7 @@ print(f"Your animals name is {animal_charnum} letters long.")
 
 #extra question
 guess = ""
-guess = input("Can you guess your secret animal?\n")
+guess = input("Can you guess your secret animal?\n").lower()
 if guess == secret_animal: print("You got it right, well done! :)")
 else: print("That's not quite right but good try!")
 
