@@ -1,13 +1,12 @@
-import datetime
-
+#import datetime
 
 name = str(input("What is your name?\n")).capitalize()
 age = int(input("How old are you?\n"))
 #dob = datetime(input("What is your date of birth? DD/MM/YYYY\n"))
 dob = input("What is your date of birth? DD/MM/YYYY\n")
-score= float(input("What score did you get\n"))
+score = float(input("What score did you get\n"))
 
-print(f"{name} is {age} years old and born on {dob} and got {score:10%} to the nearest 10")
+print(f"{name} is {age} years old and born on {dob} and got {score:.0%} to the nearest 10")
 
 '''
 name = input("What is your name?\n")
