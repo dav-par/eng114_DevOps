@@ -1,3 +1,7 @@
+Setting up git on new machine:
+
+
+
 Common git commands:
 git status
 git add filename
