@@ -1,7 +1,9 @@
 # Eng114_DevOps
-
+dav-par's Eng114 Devops documentation.  
 ## Index
-[profile](Docs/git_readme.md)  
-[git](https://github.com/dav-par/eng114_DevOps/blob/main/git_readme.md)  
-[python](https://github.com/dav-par/eng114_DevOps/blob/main/Python/python_readme.md)  
+[profile](Docs/profile_tips.md)  
+[git](Docs/git_readme.md)  
+[object oriented programming](Docs/oop.md)  
+[python](Docs/python_readme.md)  
+
 

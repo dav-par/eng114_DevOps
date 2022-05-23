@@ -9,8 +9,8 @@ def minus_two_values(a, b):
 def times_two_values(a, b):
     return a * b
 
-def divide_two_values(a, b):
-    return a / b
+def divide_two_values(a: int,b: int) -> float:
+        return a / b
 
 def sum_all(*args):
     return sum(args)
