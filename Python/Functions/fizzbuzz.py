@@ -13,7 +13,7 @@ for i in range(0, 101):
     elif i % 3 == 0 and not i % 5 == 0:
         print("fizz")
 
-    elif i % 5 == 0 and not i % 5 == 0:
+    elif i % 5 == 0 and not i % 3 == 0:
         print("buzz")
 
     else: print(i)
