@@ -22,7 +22,7 @@ class Car:
         self.name = name
         self.max_speed = max_speed
         self._current_speed = 0
-        self.acc = 0
+        self.acc = 0 #TODO: build true acceleration
         self.breaks = 0
 
     def get_current_speed(self):

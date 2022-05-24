@@ -78,7 +78,7 @@ Setter function/Set method
 
 ## Class
 - instantiation is creating an instant of a class
-- initialising is creating values for an instant of a class
+- initialising is creating values for an instant of a class and functions for it
 - dunder init, one "_" is warning, two is "_" you can't do it (in theory)
 - setters and getters help up to be more neat and protect the code
 
@@ -86,6 +86,17 @@ Setter function/Set method
 ## Syntax tips
 - +=, put the + first
 
+## Name/main
+- print(__name__) print's the name of the local file
+- def __repr__(self): - for debugging
+  - return f"function(text={arg1}, text = {arg2})"
+
+## Formating
+
+- print(f"Fixed Point: {n:f}") - shows n as fixed point
+- print(f"Exponential Notations: {n:e}") - shows n as a exponential
+
+a
 
 ## Pycharm shortcuts:
 - Comment out code:
