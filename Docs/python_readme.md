@@ -8,7 +8,7 @@ Python is a dynamic object oriented program, this means it is built around organ
   - The Name
 
 ## Datatypes
-- int - whole number
+- int - whole number (note, python has max 17 digits of accuracy)
 - float - decimal number
 - string - text
 - complex - a mix e.g. 45.j
@@ -96,7 +96,26 @@ Setter function/Set method
 - print(f"Fixed Point: {n:f}") - shows n as fixed point
 - print(f"Exponential Notations: {n:e}") - shows n as a exponential
 
-a
+## import
+- you can import libraries with functions already made
+- import os - get the whole lib
+- import date from datetime - import one function from lib
+- import date from date time as bob - rename the import if you're already using the library
+- you can install locally
+- you can use inherent libs
+- you can install global libs
+- you can use pip to get external modules/packages
+- you can make your own
+
+## making a new lib
+- app (folder)
+  - __init__.py
+  - thing_to_install.py
+- program.py
+- setup.py
+
+navigate to package folder
+pip install .
 
 ## Pycharm shortcuts:
 - Comment out code:
