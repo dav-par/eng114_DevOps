@@ -47,4 +47,5 @@ TODO -
             <br>
         e.g print() - python will go up the inheritance hierarchy 
         </p>
+- Something changing depending on context is polymorphic such as + and print()
 

@@ -117,6 +117,13 @@ Setter function/Set method
 navigate to package folder
 pip install .
 
+## 
+
+## lambda
+- an anon function
+- takes many args, only returns one thing
+- self contained code, good for security
+
 ## Pycharm shortcuts:
 - Comment out code:
   - Ctrl ?
