@@ -17,7 +17,10 @@ from airplane_class import Aeroplane
 from flight_trip_class import Flight_trip
 from passenger_class import Passenger
 
-planes = []
+# Three lists of key data
+planes = []  # This is a list of plane objects
+passengers = []  # This is a list of passengers objects
+flights = []  # This is a list of flight_trip objects
 
 
 def create_plane():
@@ -29,10 +32,7 @@ def create_plane():
     return plane
 
 
-passengers = []
-
-
-def create_pasenger():
+def create_passenger():
     pass_first = input("Passenger first name?\n")
     pass_last = input("Passenger last name?\n")
     pass_passport = input("Passenger passport num?\n")
@@ -40,9 +40,6 @@ def create_pasenger():
     passen = Passenger()
     passen.set_passenger(pass_first, pass_last, pass_passport, pass_unique_id)
     return passen
-
-
-flights: list[Flight_trip] = []
 
 
 def create_trip():
@@ -56,7 +53,7 @@ def create_trip():
 
 
 # dummy_data
-for i in range(10):
+for i in range(10):  # This makes 10 planes and 10 flights
     planes.append(Aeroplane())
     planes[i].set_aeroplane(i, ((i * 4) + 20), (i + i + i + i + 1))
     passengers.append(Passenger())
@@ -64,12 +61,13 @@ for i in range(10):
     flights.append(Flight_trip())
     flights[i].set_flight_trip("London", ("Paris" + str(i)), (i + i + i + 3), "1/6/22")
 
-for i in range(10):
+for i in range(10):  # this adds 10 passengers to 10 flights
     for j in range(10):
+        flights[int(i)].add_passenger((passengers[j].get_passenger_unique_id()))
         flights[int(i)].add_passenger((passengers[j].get_passenger_unique_id()))
 
 
-def list_all_trips(temp_list=[]):
+def list_all_flight_nums(temp_list=[]):
     for i in range(len(flights)):
         temp_list.append(flights[i].get_flight_numbers())
     print(temp_list)
@@ -98,7 +96,9 @@ def see_flight_details():
 
 
 def add_passenger_to_flight():
-    print("not coded, sorry")
+    flight_num = input("which flight would you like add a passenger to?\n")
+    passport = input("what's the passport of the passenger you want to add?\n")
+    flights[int(find_flight(flight_num))].add_passenger(int(passport))
 
 
 # checking assistant controls
@@ -106,7 +106,7 @@ def user_controls():
     choice = int(input(
         "what would you like to do today?\n1 - list all flights numbers\n2 - sell ticket\n3 - check passenger list\n4 - see flight details\n5 - register passenger\n6 - add passenger\n"))
     if choice == 1:
-        list_all_trips()
+        list_all_flight_nums()
     elif choice == 2:
         sell_ticket()
     elif choice == 3:
@@ -114,7 +114,7 @@ def user_controls():
     elif choice == 4:
         see_flight_details()
     elif choice == 5:
-        create_pasenger()
+        create_passenger()
     elif choice == 6:
         add_passenger_to_flight()
 

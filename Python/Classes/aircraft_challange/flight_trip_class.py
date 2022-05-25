@@ -10,9 +10,10 @@ class Flight_trip(Aeroplane, Passenger):
         self._flight_num = int()
         self._flight_origin = ""
         self._flight_destination = ""
+        self._Aeroplane = ""
         self._passengers = []
 
-    def set_flight_trip(self, start, end, flight_no, date):
+    def set_flight_trip(self, start, end, flight_no, date):  #need to add aeroplane to flight
         self._flight_num = flight_no
         self._flight_date = date
         self._flight_origin = start
@@ -20,6 +21,9 @@ class Flight_trip(Aeroplane, Passenger):
 
     def add_passenger(self, pass_unique_id):
         self._passengers.append(pass_unique_id)
+
+    def add_Aeroplane(self, plane_uniquid_id):
+        self._passengers.append(plane_uniquid_id)
 
     def get_flight_numbers(self):
         return self._flight_num

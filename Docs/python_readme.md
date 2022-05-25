@@ -127,3 +127,19 @@ pip install .
 ## Pycharm shortcuts:
 - Comment out code:
   - Ctrl ?
+
+
+## Accessing files:
+- command opend_file = open("filename", r)
+- to read file by line file_line_list = opened_file.readlines()
+- r read
+- w opens for writing
+- x creates new file, if already exists then dont
+- a opens file in append mode
+- t open in text mode
+- b opens in binary mode
++ open files for reading and waiting for updating
+
+## Try and Error messages
+- try lets us try something
+- except for what to do if the try, this can print error messages and has some built in e.g. FileNotFound as errmsg: - print(errmsg)
