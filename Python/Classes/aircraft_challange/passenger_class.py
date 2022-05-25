@@ -3,8 +3,7 @@ class Passenger():
     def __init__(self):
         self._first_name = ""
         self._last_name = ""
-        self._passport_number = int()
-        self._unique_id = ""
+        self._passport_number = int()"
 
     def set_passenger(self, first, last, pass_num, uid):
         self._first_name = first

@@ -19,8 +19,8 @@ class Flight_trip(Aeroplane, Passenger):
         self._flight_origin = start
         self._flight_destination = end
 
-    def add_passenger(self, pass_unique_id):
-        self._passengers.append(pass_unique_id)
+    def add_passenger(self, passport_number):
+        self._passengers.append(passport_number)
 
     def add_Aeroplane(self, plane_uniquid_id):
         self._passengers.append(plane_uniquid_id)
@@ -29,7 +29,7 @@ class Flight_trip(Aeroplane, Passenger):
         return self._flight_num
 
     def get_passengers(self):
-        return self._passengers
+        print("hello")
 
     def sell_ticket(self, passenger_unique_id):
         if self._no_of_seat > 0:

@@ -1,14 +1,9 @@
 '''
 us1 = checking assistant wants to list all flight trips available so they can sell tickets or check passenger list on specific flight_trip
-
 us2 = checking assistant wants to see the origin, destination and date of any flight
-
 us3 = ca wants to list all passengers and pasport numbers on any flight_trip
-
 us4 = ca wants to register passenger with first name, last name and passport num
-
 us5 = register specific passenger to flight_trip
-
 us6 =
 '''
 from typing import List
