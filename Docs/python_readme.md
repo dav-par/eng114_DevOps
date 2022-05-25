@@ -130,10 +130,10 @@ pip install .
 
 
 ## Accessing files:
-- command opend_file = open("filename", r)
+- command opened_file = open("filename", r)
 - to read file by line file_line_list = opened_file.readlines()
 - r read
-- w opens for writing
+- w opens for writing (will wipe the contents)
 - x creates new file, if already exists then dont
 - a opens file in append mode
 - t open in text mode
@@ -143,3 +143,7 @@ pip install .
 ## Try and Error messages
 - try lets us try something
 - except for what to do if the try, this can print error messages and has some built in e.g. FileNotFound as errmsg: - print(errmsg)
+- important to add clear messages, python codes isn't enough
+
+## while
+check the docs https://docs.python.org/3/reference/compound_stmts.html

@@ -28,7 +28,7 @@ def open2(file):
 
 def write_to_file(file, order_time):
     try:
-        with open(file, "w") as file:
+        with open(file, "a") as file:
             file.write(order_time + "\n")
 
     except FileNotFoundError as errmsg:
@@ -38,3 +38,4 @@ def write_to_file(file, order_time):
 
 write_to_file("order.txt", "las")
 open2("order.txt")
+
