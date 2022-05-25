@@ -1,6 +1,9 @@
-class BudgetItem():
+from budget_excel_generator import BudgetExcelGenerator
+
+class BudgetItem(BudgetExcelGenerator):
 
     def __init__(self):
+        super().__init__()
         self.budget_items = {}
 
     def add_budget_item(self, item, value):
@@ -24,9 +27,6 @@ class BudgetItem():
     def print_budget_items(self):
         print(self.budget_items)
 
-budget = BudgetItem()
-
-budget.add_budget_item("lunch", 10)
-budget.print_budget_items()
-budget.return_budget_item_value("dinner")
-
+    def save_budget_items(self, file_name_and_path ="default"):
+        self.create_budget_list(self.budget_items)
+        self.save_file_as(file_name_and_path)
