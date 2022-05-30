@@ -5,11 +5,11 @@ dav-par's Eng114 Devops documentation
 [profile](/Documentation/docs/profile_tips.md)  
 [Terminal/Linux](/Documentation/docs/terminal.md)  
 [git](/Documentation/docs/git_readme.md)  
-[Vagrant](/Documentation/docs/vagrant.md)  
+[vagrant](/Documentation/docs/vagrant.md)  
 [object-oriented programming](/Documentation/docs/oop.md)  
-[Unit testing](/Documentation/docs/unit_testing.md)  
+[unit testing](/Documentation/docs/unit_testing.md)  
 [python](/Documentation/docs/python_readme.md)  
-[Misc notes](/Documentation/docs/misc.md)  
+[misc notes](/Documentation/docs/misc.md)  
 
 #
 ## Problems with traditional SDLC
