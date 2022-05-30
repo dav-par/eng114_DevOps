@@ -2,7 +2,10 @@
 dav-par's Eng114 Devops documentation
 
 # What is DevOps
-- 
+The past approach to software development lead to a culture of blame between developers and operations.
+
+![Devops loop](https://github.com/dav-par/eng114_DevOps/blob/main/Documentation/resources/Devops%20loop.png)
+DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. This speed enables organizations to better serve their customers and compete more effectively in the market.
 
 ### Why DevOps - Benefits
 - 
