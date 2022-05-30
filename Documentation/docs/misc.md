@@ -15,4 +15,33 @@ An Entity Relationship (ER) Diagram is a type of flowchart that illustrates how 
 ## kubneties
 -mangers docker apps
 
-## volumn
+## volume
+
+
+## Data holding
+
+# ETL
+- extract, transform, load
+- extract the data from somewhere
+- transform the data to a workable state
+- load the data to where it's needed
+
+## HTTP Request
+- HTTP request is a method of getting data from a server
+
+## Java script object notation JSON
+- https://www.json.org/json-en.html
+- The values must be:
+    - "Name": "Value"
+    - {"Name_1": "Value_1", "Name_2": "Value_2"}
+    - {"Name":['value_1", "value_2"]}
+- json objects are strings
+- dump takes to args and transforms to json
+- json load is a good example of abstraction
+    strings, objects, booleans or nulls
+
+- serialisation =  changing in to the other format
+- deserialisation - changing in to our format
+
+## Software development life cycle
+
