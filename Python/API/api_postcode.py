@@ -23,4 +23,6 @@ print(r.status_code)
 
 if r.status_code == 200:
     content = r.content
-    print(content)
+    print(content, type(content))
+    content_json = r.json()
+    print(content_json, type(content_json))
