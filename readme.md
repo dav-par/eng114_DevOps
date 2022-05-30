@@ -18,7 +18,6 @@ The past approach to software development led to a culture of blame between deve
 - Flexibility
 - Robustness
 - Cost
-
 - Speed, new requirements can be responded to quickly
 - consistent environments
 - Renews focus on the customers
