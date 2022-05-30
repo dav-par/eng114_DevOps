@@ -40,12 +40,9 @@ TODO -
         Import the Superclass then when creating class use class subclass(importname.superclass)
         </p>
 
-### Polymorphism
-TODO - 
-<h3>Polymorphism - get a message, do something</h3>
-        <p>The situation in which something occurs in several different forms. e.g. lots of objects can be switched on and the respective object knows what to do. The object will present an interface.
-            <br>
+### Polymorphism - get a message, do something
+The situation in which something occurs in several different forms. e.g. lots of objects can be switched on and the respective object knows what to do. The object will present an interface.
+
         e.g print() - python will go up the inheritance hierarchy 
-        </p>
 - Something changing depending on context is polymorphic such as + and print()
 

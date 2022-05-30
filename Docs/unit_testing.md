@@ -31,4 +31,4 @@ In his book "Working Effectively with Legacy Code", author Michael Feathers stat
 
 
 # Other
-- pytest is nicer
+- pytest is nicer, works because you called it

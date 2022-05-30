@@ -147,3 +147,6 @@ pip install .
 
 ## while
 check the docs https://docs.python.org/3/reference/compound_stmts.html
+
+## installing custom packages
+- don't forget your setup file

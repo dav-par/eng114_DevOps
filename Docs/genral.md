@@ -12,5 +12,7 @@ An Entity Relationship (ER) Diagram is a type of flowchart that illustrates how 
 
 ## microservices arc
 
-## kubnetics
+## kubneties
 -mangers docker apps
+
+## volumn
