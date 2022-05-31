@@ -5,7 +5,7 @@ dav-par's Eng114 Devops documentation
 [profile](/Documentation/docs/profile_tips.md)  
 [Terminal/Linux](/Documentation/docs/terminal.md)  
 [git](/Documentation/docs/git_readme.md)  
-[vagrant](https://github.com/dav-par/eng114_DevOps/blob/main/Documentation/docs/Vagrant.md)
+[vagrant](https://github.com/dav-par/eng114_DevOps/blob/main/Documentation/docs/Vagrant.md)  
 [object-oriented programming](/Documentation/docs/oop.md)  
 [unit testing](/Documentation/docs/unit_testing.md)  
 [python](/Documentation/docs/python_readme.md)  
