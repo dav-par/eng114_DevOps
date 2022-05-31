@@ -16,3 +16,5 @@ Vagrant is a tool for building and managing virtual machine environments in a si
 - `sudo apt-get upgrade` upgrade system
 - `sudo apt-get install nginx -y` - install nginx
 - open `192.168.10.100` in browser to test it
+
+..
