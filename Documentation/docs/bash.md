@@ -4,5 +4,6 @@
 - first line `MUST BE` starting with `#!/bin/bash`
 update & upgrade
 installed nginx
-checked status
+start nginx
+`enable nginx`
 stopped then started
