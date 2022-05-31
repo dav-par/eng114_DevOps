@@ -8,3 +8,5 @@ start nginx
 `enable nginx`  
 stopped then started  
 ls
+
+[Special chars](howtogeek.com/439199/)15-special-characters-you-need-to-know-for-bash/)

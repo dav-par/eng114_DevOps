@@ -20,6 +20,7 @@
 - `r` `w` `x` read, write, execute
 - `ll` check file permissions
 - `chmod` change permission `-x` make executable
+- `rm -rf` delete file
 
 ## General tips
 - use tab to auto complete
