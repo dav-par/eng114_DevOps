@@ -7,3 +7,5 @@ installed nginx
 start nginx  
 `enable nginx`  
 stopped then started  
+
+test
