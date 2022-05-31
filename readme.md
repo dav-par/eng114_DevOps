@@ -51,9 +51,11 @@ The past approach to software development led to a culture of blame between deve
     - Cheaper than running lots of real hardware
 
 ## What are the four pillars of DevOps
-- planning
-- sourcing
-- developing
-- distributing
+- Collaboration
+- Automation
+- Continuous Improvement
+- Customer-centric action
+- Create with the end in mind
 
-[Source](https://jfrog.com/blog/idc-become-a-digital-innovation-factory-with-these-4-pillars-of-modern-devops/#:~:text=A%20solid%20DevOps%20strategy%20is,at%20DevOps%20speed%20and%20scale.######)
+
+[Source](https://www.atlassian.com/devops/what-is-devops)
