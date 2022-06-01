@@ -1,5 +1,5 @@
 # Vagrantup
--https://www.vagrantup.com/intro
+https://www.vagrantup.com/intro
 
 Vagrant is a tool for building and managing virtual machine environments in a single workflow. With an easy-to-use workflow and focus on automation, Vagrant lowers development environment setup time, increases production parity, and makes the "works on my machine" excuse a relic of the past.
 
@@ -36,6 +36,14 @@ A provision file is a bash script that you can call when setting up a vm using v
 
 ## Deploying an app to a new machine
 - Talk to the devs and find out the requirments and dependences
+    - where does it need to be deployed too?
+    - nodesjs
+    - how many users can it handle?
+    - does it need to be automated?
+    - what is the time frame?
+    - what type of requests?
+    - what are the dependecies required?
+    - which language does it support?
 - set up the above vagrant file
 - test your dependendences
 - write script to run all the installs

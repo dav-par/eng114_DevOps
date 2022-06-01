@@ -1,5 +1,4 @@
-## Python notes:
-
+# Python
 Python is a dynamic object oriented program, this means it is built around organising software design around data/objects together with functions rather than keeping data and functions separate. These units of combined data elements are called a Class.
 
 - A class has three elements:
@@ -41,11 +40,9 @@ These are a special kind of method which is the method used to make new instant 
   - def divide_two_values(a: int,b: int) -> float:
   - a function becomes a method if it's in a class
 
-
 ## Setter functions
 Setter function/Set method
     TODO
-
 
 ## Lists
 - list.append(value) - add value to end of list
@@ -57,12 +54,10 @@ Setter function/Set method
 - del - remove from list by index, pop will remove and return 
 - list slicing - Syntax: l=l[:index]+[‘new_value’]+l[index+1:]
 - To access sublists put the indexs next to each other e.g. [1][3]
-- When adding to a list with .append make sure to follow list formatting e.g
-![image of adding to list](Docs/resources/list_adding_to.png))
+- When adding to a list with .append make sure to follow list formatting
 - lists do not have .replace, you have to use slicing, .insert can be helpful too
 - .sort() and sorted() are amazing, b = sorted(a, reverse=True)
 - range() can make a list of integers
-
 
 ## Dictionaries
 - Curley brackets
@@ -75,13 +70,11 @@ Setter function/Set method
 - Don't forget failure states
 - nested loops happen in order
 
-
 ## Class
 - instantiation is creating an instant of a class
 - initialising is creating values for an instant of a class and functions for it
 - dunder init, one "_" is warning, two is "_" you can't do it (in theory)
 - setters and getters help up to be more neat and protect the code
-
 
 ## Syntax tips
 - +=, put the + first
@@ -92,7 +85,6 @@ Setter function/Set method
   - return f"function(text={arg1}, text = {arg2})"
 
 ## Formating
-
 - print(f"Fixed Point: {n:f}") - shows n as fixed point
 - print(f"Exponential Notations: {n:e}") - shows n as a exponential
 
@@ -112,12 +104,8 @@ Setter function/Set method
   - __init__.py
   - thing_to_install.py
 - program.py
-- setup.py
-
-navigate to package folder
-pip install .
-
-## 
+- setup.py  
+navigate to package folder and `pip install .`
 
 ## lambda
 - an anon function
@@ -126,8 +114,7 @@ pip install .
 
 ## Pycharm shortcuts:
 - Comment out code:
-  - Ctrl ?
-
+  - Ctrl + ?
 
 ## Accessing files:
 - command opened_file = open("filename", r)

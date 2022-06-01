@@ -1,3 +1,4 @@
+# Misc
 This is content to short to give it's own file that doesn't fit elsewhere yet
 
 ## ERD diagrams
@@ -20,7 +21,7 @@ An Entity Relationship (ER) Diagram is a type of flowchart that illustrates how 
 
 ## Data holding
 
-# ETL
+## ETL
 - extract, transform, load
 - extract the data from somewhere
 - transform the data to a workable state
@@ -39,7 +40,6 @@ An Entity Relationship (ER) Diagram is a type of flowchart that illustrates how 
 - dump takes to args and transforms to json
 - json load is a good example of abstraction
     strings, objects, booleans or nulls
-
 - serialisation =  changing in to the other format
 - deserialisation - changing in to our format
 

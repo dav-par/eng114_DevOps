@@ -26,6 +26,12 @@
 - use tab to auto complete
 - ctrl-x or ctrl-c will quit most things
 
+## Bash Scripting  
+Bash scrips are files you can write that run a sequence of tasks if they are allowed to exicute (+x)
+- create a file with the extension .sh
+- change permissions of this file `chmod +x filename.sh`
+- first line `MUST BE` starting with `#!/bin/bash`
+- [Special chars](howtogeek.com/439199/15-special-characters-you-need-to-know-for-bash/)
 
 ## chmod
 - Uses octal numbers:

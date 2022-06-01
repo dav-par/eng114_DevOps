@@ -2,14 +2,15 @@
 dav-par's Eng114 Devops documentation
 
 # Index
-[profile](/Documentation/docs/profile_tips.md)  
+[Profile tips](/Documentation/docs/01profile_tips.md)  
 [Terminal/Linux](/Documentation/docs/terminal.md)  
-[git](/Documentation/docs/git_readme.md)  
-[vagrant](https://github.com/dav-par/eng114_DevOps/blob/main/Documentation/docs/Vagrant.md)  
-[object-oriented programming](/Documentation/docs/oop.md)  
-[unit testing](/Documentation/docs/unit_testing.md)  
-[python](/Documentation/docs/python_readme.md)  
-[misc notes](/Documentation/docs/misc.md)  
+[Git](/Documentation/docs/git_readme.md)  
+[Object oriented programming](/Documentation/docs/oop.md)  
+[Python](/Documentation/docs/python_readme.md)  
+[APIs](/Documentation/docs/API.md)
+[Vagrant](/Documentation/docs/Vagrant.md)  
+[Unit testing](/Documentation/docs/unit_testing.md)  
+[Misc notes](/Documentation/docs/misc.md)  
 
 #
 ## Problems with traditional SDLC
@@ -56,6 +57,4 @@ The past approach to software development led to a culture of blame between deve
 - Continuous Improvement
 - Customer-centric action
 - Create with the end in mind
-
-
-[Source](https://www.atlassian.com/devops/what-is-devops)
+- [Source](https://www.atlassian.com/devops/what-is-devops)
