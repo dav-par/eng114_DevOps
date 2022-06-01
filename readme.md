@@ -2,7 +2,7 @@
 dav-par's Eng114 Devops documentation
 
 # Index
-[Profile tips](/Documentation/docs/profile_tips.md)
+[Profile tips](/Documentation/docs/profile_tips.md)  
 [Terminal/Linux](/Documentation/docs/terminal.md)  
 [Git](/Documentation/docs/git_readme.md)  
 [Object oriented programming](/Documentation/docs/oop.md)  
