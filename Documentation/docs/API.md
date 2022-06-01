@@ -1,7 +1,6 @@
 # Application programming interface - API
 - middleman between user and server, a framwork.
 
-
 ## RESTful API - Representational State Transfer
 - RESTful is a software architectural style that defines a set of constraints for the interaction with RESTful web services
 - lightweight, maintainable and scalable
