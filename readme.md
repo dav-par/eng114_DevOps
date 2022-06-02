@@ -58,4 +58,3 @@ The past approach to software development led to a culture of blame between deve
 - Customer-centric action
 - Create with the end in mind
 - [Source](https://www.atlassian.com/devops/what-is-devops)
-..
