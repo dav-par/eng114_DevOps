@@ -15,8 +15,8 @@ Vagrant is a tool for building and managing virtual machine environments in a si
 
 ## Set up your provisions file
 A provision file is a bash script that you can call when setting up a vm using vagrant  
-Use `nano provision.sh` to make it in nano
-Don't use notepad or windows files, it wont copy over properly
+Use `nano provision.sh` to make it in nano  
+Don't use notepad or windows files, it wont copy over properly, make sure to open with `#!/bin/bash`
 
 
 ## Linux commands you can do in a provisions file
@@ -30,9 +30,12 @@ Don't use notepad or windows files, it wont copy over properly
 ## Building a vagrant config file
 - first choose your box - https://app.vagrantup.com/boxes/search 
 - configure the features you need:
-    - `config.vm.network "private_network", ip: "192.168.10.100"` - sets up a network on the ip listed
-- `config.vm.provision "file", source: "./provision.sh", destination: "$HOME/"` copies a `file` from the source to the detination. `$HOME/` is the variable for the home directory
-- `config.vm.provision "shell", inline: "sudo chmod +x provision.sh && sudo ./provision.sh", run:"always"` runs a shell inline and gives `provision.sh` the permission to execute and(&&) runs it as sudo
+    - `config.vm.network "private_network", ip: "192.168.10.100"`
+        - sets up a network on the ip listed
+    - `config.vm.provision "file", source: "./provision.sh", destination: "$HOME/"`
+        - copies a `file` from the source to the detination. `$HOME/` is the variable for the home directory
+    - `config.vm.provision "shell", inline: "sudo chmod +x provision.sh && sudo ./provision.sh", run:"always"`
+        - runs a shell inline and gives `provision.sh` the permission to execute and(&&) runs it as sudo
 
 
 ## Deploying an app to a new machine
@@ -53,45 +56,46 @@ Don't use notepad or windows files, it wont copy over properly
 
 
 ## provision file for test app
-------
-`#!/bin/bash` MUST HAVE to start a script 
+- Firstline
+    - `#!/bin/bash`
+        - tells the os it's a script and to use bash to run it
+- #update and upgrade
+    - `sudo apt-get update -y`
+        - updates the package list with the latest available versions
+    - `sudo apt-get upgrade -y`
+        - upgrade command actually upgrades and installs the latest versions of packages that are already installed.
+- #install nginx
+    - `sudo apt-get install nginx -y`
+        - installs the webserver nginx and skips the yes/no prompt
+- #start nginx and make sure it runs from boot
+    - `sudo systemctl start nginx`
+        - starts the webserver
+    - `sudo systemctl enable nginx`
+        - tells the webserve to stay on
+- #Install Node.js 6.x repository
+    - `curl -sL https://deb.nodesource.com/setup_6.x | bash -`
+        - curl gets data from a server via url
+        - `-s` to do it silently, `-L` makes it follow any links
+        - `|` pipes the data from the url in to bash
+        - `bash` runs the script file
+        - `-` #TODO
+- #Install Node.js and npm 
+    - `apt-get install -y nodejs`
+        - uses the apt-get package manager to install `nodejs` which was grabbed by curl, which includes `npm` the worlds largest software registry
+        - `-y` skips the yes/no prompt
+    - `npm install pm2 -g`
+        - uses `npm` to install `pm2` a nodejs process manager
+        - `-g` installs it globally
+- #navigate to app folder and use npm to install the app
+    - `cd app/app`
+        - navigates to the folder with the app
+    - `npm install`
+        - tells npm to install it
+    - `npm start -d`
+        - tells npm to start the app
+        - `-d` #TODO
 
-#update 
-`sudo apt-get update -y` - updates the software of the vm and skips the yes/no prompt
 
-#upgrade
-`sudo apt-get upgrade -y` - upgrades too the newest version
-
-#install nginx
-`sudo apt-get install nginx -y` - installs nginx a web server
-
-#start nginx
-`sudo systemctl start nginx` - runs the webserver
-
-#enable nginx
-`sudo systemctl enable nginx` - tells the webserver that it should stay on always 
-
-#get nodejs v6
-`sudo apt install curl` - installs curl
-`sudo curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -` -installs node vs6.x
- - [wiki on curl](https://en.wikipedia.org/wiki/CURL)
- - [curl command examples](https://www.tecmint.com/linux-curl-command-examples/)
- - [curl args](https://devhints.io/curl)
- - -s makes it silent -L makes it follow links
- - then the link 
- - `|` pipes the output from the first command in to end of the second at the - locations 
- - [Pipe tips](https://linuxhint.com/linux-pipe-command-examples/)
-
-
-
-`sudo apt-get install nodejs -y`
-`sudo npm install pm2 -g`
-`sudo apt-get install python-software-properties`
-
-`cd app/app`
-`npm install`
-`npm start -d`
-------
 ## Set up the machine
 - set up your vagrant file
 - set your provisions file
@@ -99,3 +103,4 @@ Don't use notepad or windows files, it wont copy over properly
 
 ## Questions
 - is it better to run the script from local or copy it over and run
+- See #TODOs

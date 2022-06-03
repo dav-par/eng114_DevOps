@@ -45,3 +45,7 @@ An Entity Relationship (ER) Diagram is a type of flowchart that illustrates how 
 
 ## Software development life cycle
 
+## Trouble shooting
+- vm finding script with ls but saying "not found" when trying to run:
+    - check `+x` chmod, note it's postive `+` and not negative `-`
+    - check the first line is correct `#` + `!` + `/` into `#!/bin/bash` 
