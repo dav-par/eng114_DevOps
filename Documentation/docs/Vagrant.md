@@ -6,16 +6,17 @@ Vagrant is a tool for building and managing virtual machine environments in a si
 ![Vagrant diagram](/Documentation/resources/vagrant.png)
 
 ## Common commands
-- `vagrant init` - intialise first install of a box
-- `vagrant reload` - reloads the config file whilst keeping the system up
-- `vagrant destroy` - destroys the vm in your directory
-- `vagrant halt` - stop the machine
-- `vagrant up` - load file
-- `vagrant ssh` - ssh in
-
+`vagrant init` - intialise first install of a box  
+`vagrant reload` - reloads the config file whilst keeping the system up  
+`vagrant destroy` - destroys the vm in your directory  
+`vagrant halt` - stop the machine  
+`vagrant up` - load file  
+`vagrant ssh` - ssh in  
 
 ## Set up your provisions file
-A provision file is a bash script that you can call when setting up a vm using vagrant
+A provision file is a bash script that you can call when setting up a vm using vagrant  
+Use `nano provision.sh` to make it in nano
+Don't use notepad or windows files, it wont copy over properly
 
 
 ## Linux commands you can do in a provisions file
@@ -95,3 +96,6 @@ A provision file is a bash script that you can call when setting up a vm using v
 - set up your vagrant file
 - set your provisions file
 - run vagrant up
+
+## Questions
+- is it better to run the script from local or copy it over and run
