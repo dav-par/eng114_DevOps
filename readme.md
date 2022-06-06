@@ -19,13 +19,9 @@ The past approach to software development led to a culture of blame between deve
 ![Traditional problems in software development](/Documentation/resources/trad_problems.jpg)  
 
 ## What is DevOps  
-- It's a cultural change in the philosophical approach to software development
-- It's 70% consultanting so it's very important to be able to explain technical things to non-technical people
-- it focuses on automation, testing and continuous integration
+DevOps is about bridging the gap between the developers and operations, using communication and consultancy to remove the blame culture and shifting the philosophical approach to software development from a start-stop waterfall to an infinite loop of continuous improvement.
 
 ![DevOps loop](/Documentation/resources/devops_loop.png)
-
-![Devops diagram](/Documentation/resources/devops_khan.png)
 
 ## Why DevOps - Benefits
 - Easy of use
