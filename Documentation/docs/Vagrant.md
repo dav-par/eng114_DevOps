@@ -127,7 +127,6 @@ we want to use reverse proxy to change port 3000 to port 80 for easy of use
     - to restart the webserver with the new config/
 - this needs to be automated in the provisioning file
 
-
 ## Questions
 - is it better to run the script from local or copy it over and run
 - See #TODOs

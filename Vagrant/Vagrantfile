@@ -8,6 +8,9 @@ Vagrant.configure("2") do |config|
 	#copy provision file over
 	config.vm.provision "file", source: "./provision.sh", destination: "$HOME/"
 
+	#copy over nginx config
+	config.vm.provision "file", source: "./default", destination: "$HOME/"
+
 	#gives the provison.sh file ablity to execute
 	config.vm.provision "shell", inline: "sudo chmod +x provision.sh"
 
@@ -19,5 +22,6 @@ Vagrant.configure("2") do |config|
 	# Synced app folder
 	# cp everything from current location create a folder called app - copy everything from localhost
 	config.vm.synced_folder "./app", "/home/vagrant/app"
+
 
 end
