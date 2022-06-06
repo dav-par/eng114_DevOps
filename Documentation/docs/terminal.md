@@ -65,7 +65,7 @@
 - `spacebar` to see next page in list
 - `-h` or `-help` for help
 - there is no undoo or recyling bin
-- symbolic links are 
+- symbolic links are #TODO
 - `.` dotfiles are hidden files
 - avoid spaces in file names, use quotes if needed `"my notes.txt"`
 - `*` and `?` are wild cards and good for finding files e.g. `find *.txt`

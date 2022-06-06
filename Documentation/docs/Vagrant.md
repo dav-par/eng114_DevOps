@@ -93,7 +93,7 @@ Don't use notepad or windows files, it wont copy over properly, make sure to ope
         - tells npm to install it
     - `npm start -d`
         - tells npm to start the app
-        - `-d` #TODO
+        - `-d` sets up in detached mode so you can run other commands in the background
 
 
 ## Set up the machine
