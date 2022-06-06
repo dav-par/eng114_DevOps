@@ -99,3 +99,18 @@ Bash scrips are files you can write that run a sequence of tasks if they are all
     - chmod 700 file1 (user = rwx)
     - chmod 640 file1 (user = rw, group = r)
 - https://linuxhandbook.com/chmod-calculator/
+
+## Enviroment variables in linux
+- A variable is a way to refer to a stored value or object is some code.
+- You can make tempoary or persistantant variables
+- `export MY_NAME=DAVID` will make a temp variable unless saved in profile or the .bashrc file
+- `echo $MY_NAME` will show it
+- most enviroments have lots of premade variavbles which you can see using `env`
+- you can see a specific one by typing `printenv MY_NAME`
+
+
+## How to make enviroment variable persistant
+- `sudo nano .bashrc`
+- `export MY_NAME=DAVID`
+- `restart machine`
+- `source ~/.bashrc`

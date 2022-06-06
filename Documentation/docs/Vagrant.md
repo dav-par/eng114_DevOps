@@ -53,6 +53,9 @@ Don't use notepad or windows files, it wont copy over properly, make sure to ope
 - write script to run all the installs
 - if your app is all in one folder, move it to the same folder as the vagrantfile with this code in the vagrantfile:
     - `config.vm.synced_folder "./app", "/home/vagrant/app"`
+- line 17 to 27 on app shows in condtions
+    - says connect to database if it exists
+    - and show us on /posts page
 
 
 ## provision file for test app
@@ -100,6 +103,30 @@ Don't use notepad or windows files, it wont copy over properly, make sure to ope
 - set up your vagrant file
 - set your provisions file
 - run vagrant up
+
+## How to set up a reverse proxy for the app
+we want to use reverse proxy to change port 3000 to port 80 for easy of use
+
+- `sudo nano /etc/nginx/sites-available/default`
+    - this access the default file for the webserver
+- In the file change the location block:
+```
+    location / {
+        proxy_pass http://localhost:8080;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+```
+- `nginx -t`
+    - to check the config
+- `sudo systemctl restart nginx`
+    - to restart the webserver with the new config/
+- this needs to be automated in the provisioning file
+
 
 ## Questions
 - is it better to run the script from local or copy it over and run
