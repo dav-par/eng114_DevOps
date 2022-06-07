@@ -18,14 +18,13 @@ curl -sL https://deb.nodesource.com/setup_6.x | bash -
 apt-get install -y nodejs
 npm install pm2 -g
 
-#copy over default and run it
+#copy over new default and run it
+sudo rm -rf /etc/nginx/sites-available/default
 sudo cp default /etc/nginx/sites-available/
 sudo systemctl restart nginx
+sudo systemctl enable nginx
 
 #navigate to app folder, instal npm and run the app
 cd app/app
 npm install
 npm start -d
-
-#copy over ngnix config file and run it
-sudo systemctl restart nginx
