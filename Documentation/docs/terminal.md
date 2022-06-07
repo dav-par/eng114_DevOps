@@ -69,6 +69,7 @@
 - `.` dotfiles are hidden files
 - avoid spaces in file names, use quotes if needed `"my notes.txt"`
 - `*` and `?` are wild cards and good for finding files e.g. `find *.txt`
+- `:q` to quit a list
 
 
 ## Path

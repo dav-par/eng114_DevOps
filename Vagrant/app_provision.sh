@@ -11,10 +11,14 @@ sudo apt-get install nginx -y
 sudo systemctl start nginx
 sudo systemctl enable nginx
 
-# Install Node.js 6.x repository
+#Install Node.js 6.x repositorynpm 
 curl -sL https://deb.nodesource.com/setup_6.x | bash -
 
-# Install Node.js and npm
+#set up the enviroment variable for DB_HOST
+sudo echo "export DB_HOST=mongodb://192.168.10.150:27017/posts" >> /etc/bash.bashrc
+source ~/.bashrc
+
+#Install Node.js and npm
 apt-get install -y nodejs
 npm install pm2 -g
 

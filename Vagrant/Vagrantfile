@@ -8,21 +8,21 @@ Vagrant.configure("2") do |config|
 			app.vm.network "private_network", ip: "192.168.10.100"
 
 			#copy provision file over
-			app.vm.provision "file", source: "./provision.sh", destination: "$HOME/"
+			app.vm.provision "file", source: "./app_provision.sh", destination: "$HOME/"
 
 			#copy over nginx config
 			app.vm.provision "file", source: "./default", destination: "$HOME/"
 
 			#gives the provison.sh file ablity to execute
-			app.vm.provision "shell", inline: "sudo chmod +x provision.sh"
+			app.vm.provision "shell", inline: "sudo chmod +x app_provision.sh"
 
 			#Runs the file
-			app.vm.provision "shell", inline: "sudo ./provision.sh"
+			app.vm.provision "shell", inline: "sudo ./app_provision.sh"
 
 			#Can run the provision file from local with: config.vm.provision "shell", path: "provision.sh"
 
 			# Synced app folder
-			# cp everything from current location create a folder called app - copy everything from localhost
+			#cp everything from current location create a folder called app - copy everything from localhost
 			app.vm.synced_folder "./app", "/home/vagrant/app"
 	
 	end
@@ -30,7 +30,19 @@ Vagrant.configure("2") do |config|
 	config.vm.define "db" do |db|
 		db.vm.box = "ubuntu/xenial64"
 			#add a private network between localhost & VM using ip
-			db.vm.network "private_network", ip: "192.168.10.150"		
+			db.vm.network "private_network", ip: "192.168.10.150"
+
+			#copy provision file over
+			db.vm.provision "file", source: "./db_provision.sh", destination: "$HOME/"
+
+			#copy over mongodb config
+			db.vm.provision "file", source: "./mongod.conf", destination: "$HOME/"
+
+			#gives the provison.sh file ablity to execute
+			db.vm.provision "shell", inline: "sudo chmod +x db_provision.sh"
+
+			#Runs the file
+			db.vm.provision "shell", inline: "sudo ./db_provision.sh"
 
 	end
 
