@@ -26,5 +26,5 @@ sudo systemctl enable nginx
 
 #navigate to app folder, instal npm and run the app
 cd app/app
-npm install
-npm start -d
+#npm install
+#npm start -d

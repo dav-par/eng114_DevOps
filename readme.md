@@ -1,5 +1,5 @@
 # Eng114_DevOps
-dav-par's Eng114 Devops documentation
+I have started an intensive fulltime DevOps course with Sparta Global, we have covered the below topics with more to come.
 
 # Index
 [Profile tips](/Documentation/docs/profile_tips.md)  
@@ -11,8 +11,8 @@ dav-par's Eng114 Devops documentation
 [Vagrant](/Documentation/docs/Vagrant.md)  
 [Unit testing](/Documentation/docs/unit_testing.md)  
 [Misc notes](/Documentation/docs/misc.md)  
-
 #
+
 ## Problems with traditional SDLC
 The past approach to software development led to a culture of blame between developers and operations. From this the role of DevOps was formed, this was a team that understood aspects from both sides and could problem-solve to get better results for the business.
 

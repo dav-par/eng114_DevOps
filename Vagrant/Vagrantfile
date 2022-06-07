@@ -1,27 +1,37 @@
 Vagrant.configure("2") do |config|
 
-	config.vm.box = "ubuntu/xenial64"
+	config.vm.define "app" do |app|
 
-	#add a private network between localhost & VM using ip
-	config.vm.network "private_network", ip: "192.168.10.100"
+		app.vm.box = "ubuntu/xenial64"
 
-	#copy provision file over
-	config.vm.provision "file", source: "./provision.sh", destination: "$HOME/"
+			#add a private network between localhost & VM using ip
+			app.vm.network "private_network", ip: "192.168.10.100"
 
-	#copy over nginx config
-	config.vm.provision "file", source: "./default", destination: "$HOME/"
+			#copy provision file over
+			app.vm.provision "file", source: "./provision.sh", destination: "$HOME/"
 
-	#gives the provison.sh file ablity to execute
-	config.vm.provision "shell", inline: "sudo chmod +x provision.sh"
+			#copy over nginx config
+			app.vm.provision "file", source: "./default", destination: "$HOME/"
 
-	#Runs the file
-	config.vm.provision "shell", inline: "sudo ./provision.sh"
+			#gives the provison.sh file ablity to execute
+			app.vm.provision "shell", inline: "sudo chmod +x provision.sh"
 
-	#Can run the provision file from local with: config.vm.provision "shell", path: "provision.sh"
+			#Runs the file
+			app.vm.provision "shell", inline: "sudo ./provision.sh"
 
-	# Synced app folder
-	# cp everything from current location create a folder called app - copy everything from localhost
-	config.vm.synced_folder "./app", "/home/vagrant/app"
+			#Can run the provision file from local with: config.vm.provision "shell", path: "provision.sh"
 
+			# Synced app folder
+			# cp everything from current location create a folder called app - copy everything from localhost
+			app.vm.synced_folder "./app", "/home/vagrant/app"
+	
+	end
+
+	config.vm.define "db" do |db|
+		db.vm.box = "ubuntu/xenial64"
+			#add a private network between localhost & VM using ip
+			db.vm.network "private_network", ip: "192.168.10.150"		
+
+	end
 
 end
