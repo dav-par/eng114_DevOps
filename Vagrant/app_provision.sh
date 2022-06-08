@@ -29,7 +29,7 @@ sudo systemctl restart nginx
 sudo systemctl enable nginx
 
 #navigate to app folder, instal npm and run the app
-#cd app/app
-#npm install
+cd app/app
+npm install
 #node seeds/seed.js
 #npm start

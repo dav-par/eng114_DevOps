@@ -16,7 +16,7 @@ sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org
 sudo systemctl start mongod
 sudo systemctl enable mongod
 
-mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+#mongo --eval 'db.runCommand({ connectionStatus: 1 })' # this was checking the status
 
 #copy over new mongodb config and run it
 sudo rm -rf /etc/mongod.conf
