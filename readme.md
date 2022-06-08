@@ -9,6 +9,8 @@ I have started an intensive fulltime DevOps course with Sparta Global, we have c
 [Python](/Documentation/docs/python_readme.md)  
 [APIs](/Documentation/docs/API.md)  
 [Vagrant](/Documentation/docs/Vagrant.md)  
+[Architecture](/Documentation/docs/Architecture.md)  
+[Cloud Computing](/Documentation/docs/cloud_computing.md)  
 [Unit testing](/Documentation/docs/unit_testing.md)  
 [Misc notes](/Documentation/docs/misc.md)  
 #
