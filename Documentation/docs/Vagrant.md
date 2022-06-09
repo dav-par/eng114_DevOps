@@ -154,9 +154,20 @@ we want to use reverse proxy to forward port 3000 to port 80 for easy of use for
 - `sudo nano mongod.conf`
 - change ip to 0.0.0.0
 
-## finish setting up the app
-- the app code
+## restart the mongodb
+- `sudo systemctl restart mongod`
+- `sudo systemctl enable mongod`
 
+
+## finish setting up the app
+- once we have the ip (192.168.10.15) of the db machine we can save an enviroment variable in the .bashrc file
+- `sudo echo "export DB_HOST=mongodb://192.168.10.150:27017/posts" >> ~/.bashrc`
+- `source ~/.bashrc`
+- this is because the app refers to DB_HOST
+- we can test it with `printenv DB_HOST`
+- #TODO how to edit, how to script
+- we can now run the app with `nohup node app.js > /dev/null 2>&1 &` #TODO explain
 
 ## Questions
 - is it better to run the script from local or copy it over and run
+- in a vagrant file how to I got back to a machine already set up and run code after setting another up

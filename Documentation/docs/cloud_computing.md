@@ -48,8 +48,42 @@ Cloud computing is the practice of using a network of remote servers hosted on t
 - We will need to make a system to monitor our aws instances when it's running
 - aw has sns cloud watch (simple notification system)
 - we can check if the status code isn't 200 and then use a load balancer to keep the app running
+- if the app goes down and the users notice we will lose business
+- the role of DevOps is to build the infrastructure that doesn't have a single point of failure 
 
 ## Setting up a AWS
+- rent an ec2 server
+- we need to know
+    - family
+        - t2 micro
+    - hard drive
+    - security
+        - allow port 22 for ssh from localhost
+        - allow port 80 so anyone can see the webserver
+        - port 3000 for the app
+    - migrating the app and db
+        - use scp to secure copy ` scp -i "eng114.pem" ~/db_provision.sh ubuntu@ec2-54-229-164-96.eu-west-1.compute.amazonaws.com:` (we could use rsync)
+    - create a secure ssh key
+
+
+## Setting up app instance
+- click ec2
+- launch instance
+- Ubuntu Server 18.04 LTS (HVM), SSD Volume Type (note the upgrade from 16 on vm)
+- t2 micro
+- configure
+    - default 1a subnet #TODO-why
+    - enable public ip
+    - 8 gig
+- tag
+    - key: Name
+    - value: eng114_name_app
+- security groups
+    - 22 for ssh from localhost ip
+    - 80 from anywhere to host the app
+    - 3000 for the app
+- ssh in to machine from .ssh folder
+    -`ssh -i "eng114.pem" ubuntu@ec2-54-220-95-85.eu-west-1.compute.amazonaws.com`
 
 
 ## notes

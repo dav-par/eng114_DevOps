@@ -61,6 +61,7 @@
 - `sudo kill process_id` will kill the process
 - `|` #TODO
 - `head` and `tail` #TODO
+- 
 
 ## General tips
 - use `tab` to auto complete
