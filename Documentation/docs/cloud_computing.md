@@ -1,4 +1,4 @@
-# Cloud Computing/
+# Cloud Computing
 Cloud computing is the practice of using a network of remote servers hosted on the internet to store, manage, and process data, rather than a local server or a personal computer.
 
 ## Benefits
@@ -43,3 +43,13 @@ Cloud computing is the practice of using a network of remote servers hosted on t
     - eng114_name_db
     - eng114_name_bastion
     - etc
+
+
+## notes
+aws will issue a new ip to an instance if it's off for more than an 30mins
+
+## terminal
+sudo apt-get stop nginx
+sudo apt-get remove nginx
+https://linuxconfig.org/how-to-remove-nginx-from-ubuntu
+
