@@ -47,9 +47,3 @@ Cloud computing is the practice of using a network of remote servers hosted on t
 
 ## notes
 aws will issue a new ip to an instance if it's off for more than an 30mins
-
-## terminal
-sudo apt-get stop nginx
-sudo apt-get remove nginx
-https://linuxconfig.org/how-to-remove-nginx-from-ubuntu
-
