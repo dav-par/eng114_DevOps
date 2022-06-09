@@ -1,6 +1,5 @@
 # Vagrant
 https://www.vagrantup.com/intro
-
 Vagrant is a tool for building and managing virtual machine environments in a single workflow. With an easy-to-use workflow and focus on automation, Vagrant lowers development environment setup time, increases production parity, and makes the "works on my machine" excuse a relic of the past.
 
 ![Vagrant diagram](/Documentation/resources/vagrant.png)
@@ -18,6 +17,9 @@ A provision file is a bash script that you can call when setting up a vm using v
 Use `nano provision.sh` to make it in nano  
 Don't use notepad or windows files, it wont copy over properly, make sure to open with `#!/bin/bash`
 
+## If your vagrant file breaks
+- delete the .vagrant folder
+- use vm virtualbox manager to power off and remove the machine
 
 ## Linux commands you can do in a provisions file
 - `sudo apt-get update` update system
@@ -102,17 +104,17 @@ Don't use notepad or windows files, it wont copy over properly, make sure to ope
 ## Set up the machine
 - set up your vagrant file
 - set your provisions file
-- run vagrant up
+- run vagrant up/
 
 ## How to set up a reverse proxy for the app
-we want to use reverse proxy to change port 3000 to port 80 for easy of use
+we want to use reverse proxy to forward port 3000 to port 80 for easy of use for our users so they don't have to type :3000 after the ip
 
 - `sudo nano /etc/nginx/sites-available/default`
     - this access the default file for the webserver
-- In the file change the location block:
+- In the file change the location block and follow the indentation:
 ```
     location / {
-        proxy_pass http://localhost:8080;
+        proxy_pass http://localhost:3000;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
@@ -127,6 +129,34 @@ we want to use reverse proxy to change port 3000 to port 80 for easy of use
     - to restart the webserver with the new config/
 - this needs to be automated in the provisioning file
 
+## Connecting to the database
+- line 17 to 27 of the app.js shows an if statement:
+    - if DB_HOST is present then render the /posts page
+- so we need to build the DB_HOST machine and then set the envriomental variable on the app machine
+- we will use mongodb as our database
+- the app runs on port 3000, mongodb runs on port 27017
+- after updating the config we will need to `restart` and `enable` mongodb
+-
+
+## Setting up the mongodb
+- we will use ubuntu 16.04, the same as our app machine
+- configure the machine:
+    - allow app ip to connect to db machine
+    - install correct version of mongodb
+    - the default config file only lets 127.0.0.1 connect, we will change this to the app machine ip or 0.0.0.0 (this will allow any connection)
+    - `mongo --eval 'db.runCommand({ connectionStatus: 1 })'` will check if mongod is running
+
+## mongodb provision file here
+#TODO
+
+## changing the mongodb config file
+- navigate to etc folder
+- `sudo nano mongod.conf`
+- change ip to 0.0.0.0
+
+## finish setting up the app
+- the app code
+
+
 ## Questions
 - is it better to run the script from local or copy it over and run
-- See #TODOs

@@ -49,3 +49,9 @@ An Entity Relationship (ER) Diagram is a type of flowchart that illustrates how 
 - vm finding script with ls but saying "not found" when trying to run:
     - check `+x` chmod, note it's postive `+` and not negative `-`
     - check the first line is correct `#` + `!` + `/` into `#!/bin/bash` 
+
+
+
+## AWS notes
+AWS Services: Ec2, S3 VPC
+autoscalling load balancers, AMIs

@@ -14,3 +14,7 @@ In two tier you seperate out the front end and the back end so that the front en
 Hybird is a mix of the two
 
 ![Cloud](/Documentation/resources/Cloud.png)
+
+## On prim
+
+## Cloud

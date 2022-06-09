@@ -44,6 +44,13 @@ Cloud computing is the practice of using a network of remote servers hosted on t
     - eng114_name_bastion
     - etc
 
+## mointering 
+- We will need to make a system to monitor our aws instances when it's running
+- aw has sns cloud watch (simple notification system)
+- we can check if the status code isn't 200 and then use a load balancer to keep the app running
+
+## Setting up a AWS
+
 
 ## notes
 aws will issue a new ip to an instance if it's off for more than an 30mins

@@ -55,7 +55,12 @@
 - `rmdir` removes a directory, can use `-p`
 - `rm -rf direcoty` rcursively removes a directory
 - `find [path] [expresion]` looks for a file/directory in the path listed/ `locate` uses the index which is only generated after a period of time
-
+- `top` to see all processes
+    - this will be used in certifications tests to see what you're doing
+- `ps aux` will also show all processes
+- `sudo kill process_id` will kill the process
+- `|` #TODO
+- `head` and `tail` #TODO
 
 ## General tips
 - use `tab` to auto complete
