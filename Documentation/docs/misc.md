@@ -55,3 +55,9 @@ An Entity Relationship (ER) Diagram is a type of flowchart that illustrates how 
 ## AWS notes
 AWS Services: Ec2, S3 VPC
 autoscalling load balancers, AMIs
+
+
+ 
+## future to do
+aws certification
+kubernetties certification

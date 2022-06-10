@@ -68,7 +68,6 @@
 - `sudo apt purge nginx` #TODO
 
 
-
 ## General tips
 - use `tab` to auto complete
 - `ctrl-x` or `ctrl-c` will quit most things
