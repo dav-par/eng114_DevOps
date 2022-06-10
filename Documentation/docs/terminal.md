@@ -58,10 +58,16 @@
 - `top` to see all processes
     - this will be used in certifications tests to see what you're doing
 - `ps aux` will also show all processes
+- `ps aux|grep npm` kills the process using the process name `npm`
 - `sudo kill process_id` will kill the process
 - `|` #TODO
 - `head` and `tail` #TODO
-- 
+- `sudo apt-get stop nginix` stops the nginx process
+- `sudo apt-get remove nginx` stop nginx
+    - https://linuxconfig.org/how-to-remove-nginx-from-ubuntu
+- `sudo apt purge nginx` #TODO
+
+
 
 ## General tips
 - use `tab` to auto complete
