@@ -92,7 +92,7 @@ Cloud computing is the practice of using a network of remote servers hosted on t
         - #TODO link to script
     
 
-![two tier app set up](/Documentation/resources/two_tier_app.png)
+![two tier app set up](/Documentation/resources/two_tier_aws_app.png)
 
 
 ## set up ssh and app machine
