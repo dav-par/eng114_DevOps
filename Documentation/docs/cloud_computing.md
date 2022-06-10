@@ -1,5 +1,5 @@
 # Cloud Computing
-Cloud computing is the practice of using a network of remote servers hosted on the internet to store, manage, and process data, rather than a local server or a personal computer.
+Cloud computing is the practice of using a network of remote servers hosted at a remote site to store, manage, and process data, rather than a local server or a personal computer.
 
 ## Benefits
 - Shared responsbility
@@ -154,7 +154,6 @@ Cloud computing is the practice of using a network of remote servers hosted on t
         - refreshs the file
         - `printenv DB_HOST` to check it worked
         - note: make sure to edit the user `.bashrc` as this is checked first before `bash.bashrc` in the `/etc` folder
-
 - nohup node app.js > /dev/null 2>&1 &
 
 ## What are security groups
@@ -164,5 +163,6 @@ Cloud computing is the practice of using a network of remote servers hosted on t
 ## notes
 - aws will issue a new ip to an instance if it's off for more than an 30mins
 - the curl 6.0 script installed nodejs 8.x and not 6.x
-- the curl script doesn't install npm and needs to be done manually
+- the curl script doesn't install npm and needs to be done manually 
 ![node and npm version screenshot](/Documentation/resources/app_node_version.png)
+- #TODO -expand on notes
