@@ -163,6 +163,6 @@ Cloud computing is the practice of using a network of remote servers hosted at a
 ## notes
 - aws will issue a new ip to an instance if it's off for more than an 30mins
 - the curl 6.0 script installed nodejs 8.x and not 6.x
-- the curl script doesn't install npm and needs to be done manually 
+- the curl script doesn't install npm and needs to be done manually  
 ![node and npm version screenshot](/Documentation/resources/app_node_version.png)
 - #TODO -expand on notes
