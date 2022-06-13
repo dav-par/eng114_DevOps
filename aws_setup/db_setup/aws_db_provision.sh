@@ -19,3 +19,5 @@ sudo sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mongod.conf
 ##restart the database and enable it
 sudo systemctl start mongod
 sudo systemctl enable mongod
+
+#mongo --eval 'db.runCommand({ connectionStatus: 1 })'

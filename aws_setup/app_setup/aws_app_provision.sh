@@ -27,10 +27,10 @@ sudo systemctl restart nginx
 sudo systemctl enable nginx
 
 #set up the enviroment variable for DB_HOST
-sudo echo "export DB_HOST=mongodb://34.243.77.128/posts" >> /home/ubuntu/.bashrc
+sudo echo "export DB_HOST=mongodb://34.241.254.31/posts" >> /home/ubuntu/.bashrc
 source ~/.bashrc
 
-#cd app/app
-#sudo apt install npm
-#node seeds/seed.js
-#npm start
+cd app/app
+sudo apt install npm
+node seeds/seed.js
+npm start
