@@ -5,10 +5,9 @@ sudo add-apt-repository ppa:deadsnakes/ppa -y
 sudo apt install python3.7 -y
 sudo apt install python3-pip -y
 sudo pip3 install awscli
-alias python=python3.7 #must do this on each log in
-#sudo echo "export python=python3.7" >> /home/ubuntu/.bashrc
-#source ~/.bashrc
-python -m pip install boto3
+python3.7 -m pip install boto3 #not tested, may need alias python=python3.7 first
+#Type the below commands manually as they requre alias which can't be scripted
+#alias python=python3.7
 #aws configure
 #access key
 #secret key
