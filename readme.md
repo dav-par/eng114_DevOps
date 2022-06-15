@@ -1,5 +1,5 @@
 # Eng114_DevOps
-I have started an intensive fulltime DevOps course with Sparta Global, we have covered the below topics with more to come.
+I have started an intensive full time DevOps course with Sparta Global, we have covered the below topics with more to come.
 
 # Index
 [Profile tips](/Documentation/docs/profile_tips.md)  
@@ -50,10 +50,3 @@ DevOps is about bridging the gap between the developers and operations, using co
     - To provide a consistent environment so the software can be accurately tested
     - Cheaper than running lots of real hardware
 
-## What are the four pillars of DevOps
-- Collaboration
-- Automation
-- Continuous Improvement
-- Customer-centric action
-- Create with the end in mind
-- [Source](https://www.atlassian.com/devops/what-is-devops)

@@ -9,8 +9,9 @@ In the context of software, architecture refers to the fundamental structures of
 ## Two tier
 In two tier you seperate out the front end and the back end so that the front end runs with the client and the back end with the host
 
-![Two tier](/Documentation/resources/two-tier-architecture.png)
-#TODO add better diagram
+![Two tier](/Documentation/resources/two-tier-architecture.png)  
+
+![two tier app set up](/Documentation/resources/two_tier_aws_app.png)
 
 ## Hybrid 
 Hybird is a mix of the two

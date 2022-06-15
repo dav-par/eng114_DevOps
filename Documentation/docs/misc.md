@@ -7,16 +7,6 @@ An Entity Relationship (ER) Diagram is a type of flowchart that illustrates how 
 ##When talking about something, talk about in context of what you do
 
 
-## aws
-
-## docker
-
-## microservices arc
-
-## kubneties
--mangers docker apps
-
-## volume
 
 
 ## Data holding
@@ -51,13 +41,26 @@ An Entity Relationship (ER) Diagram is a type of flowchart that illustrates how 
     - check the first line is correct `#` + `!` + `/` into `#!/bin/bash` 
 
 
+## Application programming interface - API
+- middleman between user and server, a framwork.
 
-## AWS notes
-AWS Services: Ec2, S3 VPC
-autoscalling load balancers, AMIs
+### RESTful API - Representational State Transfer
+- RESTful is a software architectural style that defines a set of constraints for the interaction with RESTful web services
+- lightweight, maintainable and scalable
+- uses http (hyper text transfer protocol)
+- When talking about something, talk about in context of what you do
+
+### utility
+- https://postcodes.io/
 
 
+## microservices arc
+
+## kubneties
+-mangers docker apps
+
+## volume
  
 ## future to do
 aws certification
-kubernetties certification
+kubernetties certification#

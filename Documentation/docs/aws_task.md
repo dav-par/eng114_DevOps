@@ -1,3 +1,15 @@
+# AWS tasks
+- set up an ec2
+- use scripts to install nginx and automatily set it up on a public ip
+- use scripts to automate as much of the app set up as you can
+- learn awscli
+- access s3 via awscli on an ec2
+- set up an auto balancer
+- set up a load balancer
+- set up sns
+- set up alarm for 50% cpu utilisation
+- set up full automated autos caler/load balancer that hosts the app on min 2 instances, 3 max
+
 
 ## Setting up a EC2 on AWS
 - rent an ec2 server
@@ -38,9 +50,6 @@
     - `scp -i "eng114.pem" ~/app_provision.sh ubuntu@ec2-54-229-164-96.eu-west-1.compute.amazonaws.com:`
     - check script and run
         - #TODO link to script
-    
-
-![two tier app set up](/Documentation/resources/two_tier_aws_app.png)
 
 
 ## set up ssh and app machine
@@ -177,16 +186,8 @@ tag
     - eng114-david-automade
 
 
-
-
-[google sre book](https://sre.google/sre-book/monitoring-distributed-systems/#:~:text=The%20four%20golden%20signals%20of,system%2C%20focus%20on%20these%20four)
-
-
 ## notes
 - aws will issue a new ip to an instance if it's off for more than an 30mins
 - the curl 6.0 script installed nodejs 8.x and not 6.x
 - the curl script doesn't install npm and needs to be done manually  
 ![node and npm version screenshot](/Documentation/resources/app_node_version.png)
-- #TODO -expand on notes
-
-
