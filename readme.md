@@ -5,7 +5,7 @@ I have started an intensive fulltime DevOps course with Sparta Global, we have c
 [Profile tips](/Documentation/docs/profile_tips.md)  
 [Terminal/Linux](/Documentation/docs/terminal.md)  
 [Git](/Documentation/docs/git_readme.md)  
-[AWS](/Documentation/docs/aws.md) - [task](/Documentation/docs/aws_task.md)
+[AWS](/Documentation/docs/aws.md) - [task](/Documentation/docs/aws_task.md)  
 [Object oriented programming](/Documentation/docs/oop.md)  
 [Python](/Documentation/docs/python_readme.md)  
 [APIs](/Documentation/docs/API.md)  
