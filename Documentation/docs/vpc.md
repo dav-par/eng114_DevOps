@@ -6,7 +6,6 @@ A virtual private cloud (VPC) is a secure, isolated private cloud hosted within 
     - you pay for what you use
     - they are more secure than a a public cloud
 
-&nbsp;
 - benefits of vpc
     - Scalability
         - Because a VPC is hosted by a public cloud provider, customers can add more computing resources on demand.
@@ -16,8 +15,6 @@ A virtual private cloud (VPC) is a secure, isolated private cloud hosted within 
         - Cloud-hosted websites and applications typically perform better than those hosted on local on-premises servers.
     - Better security
         - The public cloud providers that offer VPCs often have more resources for updating and maintaining the infrastructure, especially for small and mid-market businesses. For large enterprises or any companies that face extremely tight data security regulations, this is less of an advantage.
-
-&nbsp;
 
 ## Internet gateway
 - A computer that sits between different networks or applications. The gateway converts information, data or other communications from one protocol or format to another. A router may perform some of the functions of a gateway. An Internet gateway can transfer communications between an enterprise network and the Internet.
