@@ -6,9 +6,9 @@
 ## Redploy two tier architecture on VPC
 - Diagram first
 - Create private subnet for monogodb
-- Design rules for:
-    - public subnet
-    - private subnet
+- Design the public subnet and app ec2 connecting to the private subnet and db ec2
+- Rules
+    - private ec2 and subnet must not have a public ip
 - Notes
     - public subnet already made
     - private subnet and db ec2 should not have public IP
@@ -30,7 +30,7 @@ To complete this task successfully you will need
         -Only use IP4
         - Use chosen CIDR block, in our case this is 10.0.0.4/16
     - IG
-        - Attach to VPC
+        - Create and attach to VPC
     - Subnet
         - Select VPC
         - add subnet ID
@@ -84,20 +84,40 @@ To complete this task successfully you will need
 - record the private IP
     - you'll need it to set up the app
 
-## Designing rules
-- private sub
+## App set up
+- launch an ec2 instance:
+    - ubuntu 18.04
+    - t2.micro
+    - your vpc
+    - your public subnet
+    - public ip
+    - user data script with the db private ip as DB_HOST
+    - 8gig
+    - taged following naming convention
+    - security group
+        - port 80 for all
+        - port 22 for "my ip"
+        - port 3000 for all (for the app)
 
-## Redploy two tier architecture on VPC
-- Diagram first
-- Create private subnet for monogodb
-- Design rules for:
-    - public subnet
-    - private subnet
-- Notes
-    - public subnet already made
-    - private subnet and db ec2 should not have public IP
-- Explain route table for private subnet
-    - rules
-    - do you need one
-- Optional
-    - create NACL for your subnets for an addtional layer
+## Finishing db set up
+- go to your db security groups
+- change the acces ip to your app ip 10.0.5.251/32
+
+## Route table
+- private subnet
+    - This isn't needed and ensures your db doesn't connect to the internet
+- public subnet
+    - click route tables in the VPC panel
+    - create route
+    - follow naming convention
+    - select your vc
+    - subnet associations
+        - assoicate with your subnet
+    - edit routes - attaching internet gateway, you may already have done this
+    - first route
+        destination 10.0.0.0/16
+        target local
+    - second route
+        - destination 0.0.0.0/0
+        - target is your internet gateway
+ 
