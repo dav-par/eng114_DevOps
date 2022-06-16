@@ -7,6 +7,7 @@ I have started an intensive full time DevOps course with Sparta Global, we have 
 [Git](/Documentation/docs/git_readme.md)  
 [AWS](/Documentation/docs/aws.md) - [task](/Documentation/docs/aws_task.md)  
 [VPC](/Documentation/docs/vpc.md) - [task](/Documentation/docs/vpc_task.md)  
+[cicd](/Documentation/docs/cicd.md) - [task](/Documentation/docs/cicd_task.md)  
 [Object oriented programming](/Documentation/docs/oop.md)  
 [Python](/Documentation/docs/python_readme.md)  
 [APIs](/Documentation/docs/API.md)  

@@ -64,3 +64,17 @@ An Entity Relationship (ER) Diagram is a type of flowchart that illustrates how 
 ## future to do
 aws certification
 kubernetties certification#
+
+
+## CRUD
+Create
+Read
+Update
+Delete
+
+
+service level agreement (sla)
+service level objectives (slo)
+service level indicators (sli)
+site reliability engineer (sre)
+

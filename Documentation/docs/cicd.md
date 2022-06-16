@@ -50,3 +50,29 @@ dont do cicd if:
 
 # Jenkins
 tasks are called jobs
+
+## task
+- generate .ssh in local host
+- copy public key (114.pub) to github
+- test ssh connection
+
+jenkins
+- 114 private key in jenkins
+- to create a secure connection with github and jenkins
+
+connect app folder to jenkins using key
+
+commit as many times as you like
+
+- [how to make ssh key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+
+git remote set-url origin git@github.com:dav-par/eng114_DevOps.git
+
+jenkins has master node and agent node
+
+master does everything
+
+agent is just for testing
+
+log in jenkins
+test ubuntu commands

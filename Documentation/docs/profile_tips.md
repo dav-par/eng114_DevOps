@@ -11,9 +11,28 @@
   - In my free time I... 
   - Talk about career change
 
-## Previous exp:
+## Previous exp
   - Keep it short and relevant, can use bullet points
 
-## Uni:
+## Uni
   - what modules did you do?
   - what was your final project?
+
+
+## Interview tips
+- use STAR method
+- 2-5 years
+  - short - finish course
+  - med - gain exp and skills
+  - long - work towards lead and devloping others by devloping others 
+- weakness
+  - what it was
+  - what you did
+  - what next
+
+
+## making videos tips
+- Don't repeat yourself
+- mention bootstraping
+- minimum viable product
+
