@@ -29,6 +29,3 @@ ssh-keygen -t ed25519 -C "email@host.com"
 
 ## Multistage Build with Jenkins
 - 
-
-## Continuous Integration (CI)
-- 
