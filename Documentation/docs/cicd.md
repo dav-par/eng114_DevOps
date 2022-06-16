@@ -39,3 +39,14 @@ Multi Billion Dollar companies like Facebook, Netflix and Ebay have adopted Jenk
 - great plugins
 - can be intergrated with most cloud platforms
 - good for working out cicd requirements 
+
+business beifits 
+less money
+faster release of product
+
+dont do cicd if:
+- cost is too much
+- is the task repetitive
+
+# Jenkins
+tasks are called jobs
