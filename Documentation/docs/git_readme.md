@@ -1,6 +1,6 @@
 [link to index](/readme.md)  
 # Git read me
-git is method of version control, can be combined with github for online version control
+git is a method of version control and can be combined with github for online version control
 
 ## Setting up git
 [how to set up git](https://kbroman.org/github_tutorial/pages/first_time.html)  
@@ -16,6 +16,6 @@ git is method of version control, can be combined with github for online version
 - `git commit -m "message"`
 - `git push`
 
-## Trickier git commands:
+## Extra commands
 - `git reset --hard origin/main`
     - forces a pull and reset a branch

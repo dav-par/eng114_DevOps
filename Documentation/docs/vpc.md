@@ -26,7 +26,7 @@ A virtual private cloud (VPC) is a secure, isolated private cloud hosted within 
 ## Classless Inter-Domain Routing (CIDR) block
 - Classless Inter-Domain Routing (CIDR /ˈsaɪdər, ˈsɪ-/) is a method for allocating IP addresses and for IP routing. The Internet Engineering Task Force introduced CIDR in 1993 to replace the previous classful network addressing architecture on the Internet. Its goal was to slow the growth of routing tables on routers across the Internet, and to help slow the rapid exhaustion of IPv4 addresses.[1][2]
 - [How to create one](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-vpcs.html)
-- [creating the block specfically](https://docs.aws.amazon.com/vpc/latest/userguide/subnet-cidr-reservation.html)
+- [creating the block specifically](https://docs.aws.amazon.com/vpc/latest/userguide/subnet-cidr-reservation.html)
 
 
 ##  Network Access Control Lists (NACL)

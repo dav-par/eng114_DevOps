@@ -39,7 +39,7 @@ To complete this task successfully you will need
         - Select VPC
         - Create table
         - Attach VPC to IG
-        - Assoicate with subnet
+        - Associate with subnet
     - an agreed IPv4 CIDR block to create your private subnet on
     - More details instructions to follow
 

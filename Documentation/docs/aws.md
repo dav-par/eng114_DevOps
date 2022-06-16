@@ -3,9 +3,9 @@
 - AWS is the cloud computing offer from amazon
 - It has regions all over the world
     - a region is typically a geographic area or city such as London
-- Each region has avliablity zones (AZs)
+- Each region has availability zones (AZs)
     - These are distinct locations within an AWS Region that are engineered to be isolated from failures in other Availability Zones.
-    - This reduce the chance failure by not having a single point.
+    - This reduces the chance of failure by not having a single point.
 - Considerations when choosing a region
     - who is the end user? client? clients customers?
     - where is the end user
@@ -34,8 +34,8 @@ S3 is a global object storage solution provided by amazon.
     - can store anything
     - no data limit
     - global service
-        - highly avliable (trello card)
-        - highly scalable (trello card)
+        - highly available
+        - highly scalable
     - Good for disaster recovery
 - storage classes
     - standard (high cost)
@@ -44,9 +44,9 @@ S3 is a global object storage solution provided by amazon.
         - available on request with notice
         - usually 24 hours
 - S3 uses cases
-    - distaster recovery plan
+    - disaster recovery plan
         - github is a cloud and can go down
-        - s3 is a good back up
+        - s3 is a good backup
     - social media
         - can host anything
         - is economical
@@ -62,7 +62,7 @@ AWS CLI is a unified tool to manage your AWS services. With just one tool to dow
     - sudo apt install python3-pip
     - alias python=python3
     - sudo pip3 install awscli
-    - aws configure #This encripts the keys
+    - aws configure #This encrypts the keys
         - access key
         - secret key
         - region
@@ -74,16 +74,16 @@ AWS CLI is a unified tool to manage your AWS services. With just one tool to dow
 
 ## amazon machine images AMIs
 - these are images of a machine in a certain state
-- you can save your machine, teminate it and bring it back from an image
+- you can save your machine, terminate it and bring it back from an image
 - you may need to start some services up depending on how the image was saved
 
 ## Security groups
 - these are saved firewall states you can apply to an AWS instance
 - they control what ports can access what on the machine
 
-## eding permisons
-- can be on control pannel
-- can be on aws cli
+## editing permissions
+- can be on the control panel
+- can be on awscli
 - can be in python
 
 ## monitoring 
@@ -93,7 +93,7 @@ AWS CLI is a unified tool to manage your AWS services. With just one tool to dow
 - if the app goes down and the users notice we will lose business
 - the role of DevOps is to build the infrastructure that doesn't have a single point of failure 
 - make your emergency plan part of sdlc
-- dev ops is monitoring  and fixing automatically
+- devops is monitoring  and fixing automatically
 
 ## Four golden rules
 The four golden signals of monitoring are latency, traffic, errors, and saturation. If you can only measure four metrics of your user-facing system, focus on these four. The time it takes to service a request. It's important to distinguish between the latency of successful requests and the latency of failed requests.  
@@ -101,7 +101,7 @@ The four golden signals of monitoring are latency, traffic, errors, and saturati
 - latency
     - the time it takes for a service request
 - traffic
-    - how much demand is on your service
+    - how much demand for your service
 - errors
     - the rate of requests that fail etc
 - saturation
@@ -116,9 +116,9 @@ The four golden signals of monitoring are latency, traffic, errors, and saturati
 AWS Auto Scaling monitors your applications and automatically adjusts capacity to maintain steady, predictable performance at the lowest possible cost. 
 
 ## Load balancer
-- Directs the traffic to diffrent instances of the same thing
+- Directs the traffic to different instances of the same thing
 - Application load balancer
-    - good for network facing app
+    - good for network-facing app
 - Elastic load balancer
 - Network load balancer   
 
@@ -127,16 +127,8 @@ AWS Auto Scaling monitors your applications and automatically adjusts capacity t
 ![auto-load](/Documentation/resources/auto_load.png)
 
 
-
-
-
-
-
-
-
-
 ## General notes
-- aws will issue a new ip to an instance if it's off for more than an 30mins
+- aws will issue a new ip to an instance if it's off for more than 30mins
 - the curl 6.0 script installed nodejs 8.x and not 6.x
 - the curl script doesn't install npm and needs to be done manually  
 ![node and npm version screenshot](/Documentation/resources/app_node_version.png)

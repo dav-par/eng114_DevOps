@@ -6,7 +6,7 @@ Vagrant is a tool for building and managing virtual machine environments in a si
 ![Vagrant diagram](/Documentation/resources/vagrant.png)
 
 ## Common commands
-`vagrant init` - intialise first install of a box  
+`vagrant init` - initialise first install of a box  
 `vagrant reload` - reloads the config file whilst keeping the system up  
 `vagrant destroy` - destroys the vm in your directory  
 `vagrant halt` - stop the machine  
@@ -14,9 +14,9 @@ Vagrant is a tool for building and managing virtual machine environments in a si
 `vagrant ssh` - ssh in  
 
 ## Set up your provisions file
-A provision file is a bash script that you can call when setting up a vm using vagrant  
+A provisionsing file is a bash script that you can call when setting up a vm using vagrant  
 Use `nano provision.sh` to make it in nano  
-Don't use notepad or windows files, it wont copy over properly, make sure to open with `#!/bin/bash`
+Don't use notepad or windows files, it won't copy over properly, make sure to open with `#!/bin/bash`
 
 ## If your vagrant file breaks
 - delete the .vagrant folder
@@ -40,21 +40,21 @@ Don't use notepad or windows files, it wont copy over properly, make sure to ope
         - runs a shell inline and gives `provision.sh` the permission to execute and(&&) runs it as sudo
 
 ## Deploying an app to a new machine
-- Talk to the devs and find out the requirments and dependences
+- Talk to the devs and find out the requirements and dependences
     - where does it need to be deployed too?
     - nodesjs
     - how many users can it handle?
     - does it need to be automated?
     - what is the time frame?
     - what type of requests?
-    - what are the dependecies required?
+    - what are the dependencies required?
     - which language does it support?
 - set up the above vagrant file
-- test your dependendences
+- test your dependences
 - write script to run all the installs
 - if your app is all in one folder, move it to the same folder as the vagrantfile with this code in the vagrantfile:
     - `config.vm.synced_folder "./app", "/home/vagrant/app"`
-- line 17 to 27 on app shows in condtions
+- line 17 to 27 on app shows in conditions
     - says connect to database if it exists
     - and show us on /posts page
 

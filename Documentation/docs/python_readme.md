@@ -72,10 +72,10 @@ Setter function/Set method
 - nested loops happen in order
 
 ## Class
-- instantiation is creating an instant of a class
-- initialising is creating values for an instant of a class and functions for it
+- instantiation is creating an instance of a class
+- initialising is creating values for an instance of a class and functions for it
 - dunder init, one "_" is warning, two is "_" you can't do it (in theory)
-- setters and getters help up to be more neat and protect the code
+- setters and getters help up to be neater and protect the code
 
 ## Syntax tips
 - +=, put the + first
@@ -122,7 +122,7 @@ navigate to package folder and `pip install .`
 - to read file by line file_line_list = opened_file.readlines()
 - r read
 - w opens for writing (will wipe the contents)
-- x creates new file, if already exists then dont
+- x creates new file, if already exists then don't
 - a opens file in append mode
 - t open in text mode
 - b opens in binary mode

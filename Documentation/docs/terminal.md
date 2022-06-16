@@ -51,10 +51,10 @@
 - `hostname -I` check ip
 - `cat` concatenates and displays files
 - `echo` displays arguments on the screen
-- `man` displays the manaual
+- `man` displays the manual
 - `mkdir` makes a directory, can use `-p`
 - `rmdir` removes a directory, can use `-p`
-- `rm -rf direcoty` rcursively removes a directory
+- `rm -rf direcoty` recursively removes a directory
 - `find [path] [expresion]` looks for a file/directory in the path listed/ `locate` uses the index which is only generated after a period of time
 - `top` to see all processes
     - this will be used in certifications tests to see what you're doing
@@ -76,7 +76,7 @@
 - `enter` to see one more line in a page
 - `spacebar` to see next page in list
 - `-h` or `-help` for help
-- there is no undoo or recyling bin
+- there is no undo or recycling bin
 - symbolic links are #TODO
 - `.` dotfiles are hidden files
 - avoid spaces in file names, use quotes if needed `"my notes.txt"`
@@ -87,16 +87,16 @@
 ## Path
 PATH is an environmental variable in Linux and other Unix-like operating systems that tells the shell which directories to search for executable files (i.e., ready-to-run programs) in response to commands issued by a user. It increases both the convenience and the safety of such operating systems and is widely considered to be the single most important environmental variable. 
 - `echo $PATH` to see it
-- controls the commmand search path
+- controls the command search path
 - contains a list of directories
-- first in list has priority if there's two of the same executable 
+- first in the list has priority if there are two of the same executable 
 
 
 ## Bash Scripting  
-Bash scrips are files you can write that run a sequence of tasks if they are allowed to exicute (+x)
+Bash scripts are files you can write that run a sequence of tasks if they are allowed to execute (+x)
 - create a file with the extension .sh
 - change permissions of this file `chmod +x filename.sh`
-- first line `MUST BE` starting with `#!/bin/bash`
+- first line must start with a shebang `#!` followed by the interupter `/bin/bash`
 - [Special chars](howtogeek.com/439199/15-special-characters-you-need-to-know-for-bash/)
 
 ## chmod
@@ -106,24 +106,22 @@ Bash scrips are files you can write that run a sequence of tasks if they are all
     - 1 - execute
 - Add the sum of the numbers of the permissions you want to grant e.g 7 (4 + 2 + 1)
 - Read, write, execute is 6 (4 + 2 + 1)
-- Complete permissions are given as a three digit number
+- Complete permissions are given as a three-digit number
 - Each digit corresponds to a context (owner, group, other)
     - e.g chmod 764 file1 (user = rwx, group = rw and others = read on file1)
     - chmod 700 file1 (user = rwx)
     - chmod 640 file1 (user = rw, group = r)
 - https://linuxhandbook.com/chmod-calculator/
 
-## Enviroment variables in linux
+## Environment variables in linux
 - A variable is a way to refer to a stored value or object is some code.
-- You can make tempoary or persistantant variables
-- `export MY_NAME=DAVID` will make a temp variable unless saved in profile or the .bashrc file
+- You can make temporary or persistent variables
+- `export MY_NAME=DAVID` will make a temp variable unless saved in the profile or the .bashrc file
 - `echo $MY_NAME` will show it
-- most enviroments have lots of premade variavbles which you can see using `env`
+- most environments have lots of premade variables which you can see using `env`
 - you can see a specific one by typing `printenv MY_NAME`
 
 
-## How to make enviroment variable persistant
-- `sudo nano .bashrc`
-- `export MY_NAME=DAVID`
-- `restart machine`
+## How to make environment variable persistent
+- `sudo echo "export MY_NAME=David" >> /home/ubuntu/.bashrc`
 - `source ~/.bashrc`
