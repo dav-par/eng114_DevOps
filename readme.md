@@ -10,7 +10,7 @@ I have started an intensive full-time DevOps course with Sparta Global, we have 
 [cicd](/Documentation/docs/cicd.md) - [task](/Documentation/docs/cicd_task.md)  
 [AWS](/Documentation/docs/aws.md) - [task](/Documentation/docs/aws_task.md)  
 [VPC](/Documentation/docs/vpc.md) - [task](/Documentation/docs/vpc_task.md)  
-[vagrant](/Documentation/docs/vagrant.md) - [task](/Documentation/docs/vagrant_task.md)  
+[vagrant](/Documentation/vagrant.md) - [task](/Documentation/docs/vagrant_task.md)  
 [Object oriented programming](/Documentation/docs/oop.md)  
 [Python](/Documentation/docs/python_readme.md) - [code snippets](/Python/)  
 [Unit testing](/Documentation/docs/unit_testing.md)  
