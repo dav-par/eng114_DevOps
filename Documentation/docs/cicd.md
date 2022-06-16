@@ -5,7 +5,7 @@ CI CD is considered as the backbone of DevOps practices and automation, It plays
 
 What is a CI CD Pipeline: The CI/CD pipeline is all about automation: Initiating code builds, automated testing, and automated deploying to the staging or production environments. It’s complex and exciting at the same time, but incredibly fast, if the output of any stage fails, the next stage will also fail.
 
-## difrence between Continuous Delivery(CD) and CDE(Continuous Deployment) use cases
+## Difference between Continuous Delivery(CD) and CDE(Continuous Deployment) use cases
 Continuous Integration (CI): Developers merge/commit code to master branch multiple times a day, fully automated build and test process which gives feedback within few minutes, by doing so, you avoid the integration hell that usually happens when people wait for release day to merge their changes into the release branch.
 
 Continuous Delivery is an extension of continuous integration to make sure that you can release new changes to your customers quickly in a sustainable way. This means that on top of having automated your testing, you also have automated your release process and you can deploy your application at any point of time by clicking on a button. In continuous Delivery the deployment is completed manually.
@@ -32,7 +32,7 @@ The leading open source automation server, Jenkins provides hundreds of plugins 
 ![cicd tools](/Documentation/resources/cicd_tools.png)  
 
 
-### Why Jenkins
+## Why Jenkins
 Multi Billion Dollar companies like Facebook, Netflix and Ebay have adopted Jenkins because of it’s amazing advantages, Jenkins is an open-source automation server in which the central build and CI process take place, It is a Java-based program with packages for Windows, macOS, & Linux.
 
 - open source
