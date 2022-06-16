@@ -11,10 +11,9 @@
     - good for keeping your `.gitignore` etc
 
 ## make second key
-public key to github
-private key to jenkins
-ssh-keygen -t ed25519 -C "email@host.com"
-
+public key to github  
+private key to jenkins  
+ssh-keygen -t ed25519 -C "email@host.com"  
 
 ## github webhooks
 -
