@@ -1,3 +1,4 @@
+[link to index](/readme.md)  
 # Git read me
 git is method of version control, can be combined with github for online version control
 

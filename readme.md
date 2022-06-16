@@ -10,7 +10,6 @@ I have started an intensive full time DevOps course with Sparta Global, we have 
 [cicd](/Documentation/docs/cicd.md) - [task](/Documentation/docs/cicd_task.md)  
 [Object oriented programming](/Documentation/docs/oop.md)  
 [Python](/Documentation/docs/python_readme.md)  
-[APIs](/Documentation/docs/API.md)  
 [Vagrant](/Documentation/docs/vagrant.md) - [task](/Documentation/docs/vagrant_task.md)  
 [Architecture](/Documentation/docs/Architecture.md)  
 [Cloud Computing](/Documentation/docs/cloud_computing.md)  

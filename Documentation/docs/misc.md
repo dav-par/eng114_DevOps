@@ -1,3 +1,4 @@
+[link to index](/readme.md)  
 # Misc
 This is content to short to give it's own file that doesn't fit elsewhere yet
 
@@ -6,7 +7,20 @@ An Entity Relationship (ER) Diagram is a type of flowchart that illustrates how 
 
 ##When talking about something, talk about in context of what you do
 
+-----
 
+# Application programming interface - API
+- middleman between user and server, a framwork.
+
+## RESTful API - Representational State Transfer
+- RESTful is a software architectural style that defines a set of constraints for the interaction with RESTful web services
+- lightweight, maintainable and scalable
+- uses http (hyper text transfer protocol)
+- When talking about something, talk about in context of what you do
+
+## utility
+- https://postcodes.io/
+-----
 
 
 ## Data holding

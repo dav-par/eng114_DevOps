@@ -1,3 +1,4 @@
+[link to index](/readme.md)  
 # Terminal
 
 ## Common directories

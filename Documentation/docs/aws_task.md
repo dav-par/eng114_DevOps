@@ -1,3 +1,4 @@
+[link to index](/readme.md)  
 # AWS tasks
 - set up an ec2
 - use scripts to install nginx and automatily set it up on a public ip

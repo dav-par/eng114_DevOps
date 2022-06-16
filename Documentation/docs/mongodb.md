@@ -1,3 +1,4 @@
+[link to index](/readme.md)  
 # MongoDB
 a database solution made by the company mongoDB, comes from the word humongous
 

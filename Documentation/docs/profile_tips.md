@@ -1,4 +1,6 @@
+[link to index](/readme.md)  
 # Profile tips:
+Tips for your profile with Sparta Global and general interview tips
 
 ## Keep it high level:
   - Did you go to uni 

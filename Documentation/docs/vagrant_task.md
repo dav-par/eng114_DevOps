@@ -1,3 +1,4 @@
+[link to index](/readme.md)  
 # Set up vagrant multibox
 #TODO info on task
 

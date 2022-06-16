@@ -1,3 +1,4 @@
+[link to index](/readme.md)  
 # Python
 Python is a dynamic object oriented program, this means it is built around organising software design around data/objects together with functions rather than keeping data and functions separate. These units of combined data elements are called a Class.
 
