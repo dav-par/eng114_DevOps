@@ -1,4 +1,5 @@
 # cicd task using jenkins
+![jenkins pipeline](/Documentation/resources/jenkins_diagram.png)  
 
 ## Documentation
 - [click here](/Documentation/docs/cicd.md)  
@@ -19,7 +20,13 @@ ssh-keygen -t ed25519 -C "email@host.com"
 -
 
 ## jenkins jobs
-- 
+- jobs are the name of any task you set in jenkins
+- you can make a job to do anything you would do locally such as run scrips
+- you can make one job trigger another
+- making a job
+    - new item
+    - create job
+    - fill in task
 
 ## Multistage Build with Jenkins
 - 
