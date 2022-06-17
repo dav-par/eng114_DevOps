@@ -20,7 +20,7 @@
     - create NACL for your subnets for an addtional layer
 
 ## Diagram
-![first draft](/Documentation/resources/vpc_first.png)  
+![first draft](/Documentation/resources/aws/vpc_first.png)  
 
 ## Prerequisites
 To complete this task successfully you will need

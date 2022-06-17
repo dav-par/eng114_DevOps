@@ -1,6 +1,6 @@
 [link to index](/readme.md)  
 # cicd task using jenkins
-![jenkins pipeline](/Documentation/resources/jenkins_diagram.png)  
+![jenkins pipeline](/Documentation/resources/cicd/jenkins_diagram.png)
 
 ## Documentation
 - [click here](/Documentation/docs/cicd.md)  
@@ -102,7 +102,7 @@
                 - fast-forward mode `-ff`
 - create a job that builds dev branch
 - post-build actions
-    - Git publisher
+    - git publisher
         - push only if build succeeds
         - merge results
         - branch to push `main`

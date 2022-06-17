@@ -117,7 +117,6 @@
 - `aws configure`
     - the core command to configure where you can add your keys and region
 - then use `aws s3` followed by the code
-
 - common aws s3 commands
 - `aws s3 mb s3://eng114-david-bucket`
     - make a bucket
@@ -132,10 +131,8 @@
     - removes the file from the bucket
 - `aws s3 rb s3://eng113-david`
     - removes the bucket
-
 - s3 api
 s3 has an api which I havn't used
-
 - accessing sc3 via python scripts using awscli
 I found the easyiest way to do is to work on localhost then scp the scripts over
 `scp -i "eng114.pem" -r /c/git_projects/eng114_DevOps/Python/boto3/  ubuntu@ec2-18-203-110-71.eu-west-1.compute.amazonaws.com:`
@@ -143,7 +140,7 @@ I found the easyiest way to do is to work on localhost then scp the scripts over
 
 
 ## Setting up a topic
-- 
+- #TODO
 
 ## Setting up an EC2 to use AWS
 - click the instance in the EC2 menu
@@ -162,7 +159,7 @@ I found the easyiest way to do is to work on localhost then scp the scripts over
     - name 
 
 ## setting up launch template
-- 
+- #TODO
 
 ## Setting up autoscalling and load balancing
 - Create an Auto Scalling Group
@@ -191,4 +188,4 @@ tag
 - aws will issue a new ip to an instance if it's off for more than an 30mins
 - the curl 6.0 script installed nodejs 8.x and not 6.x
 - the curl script doesn't install npm and needs to be done manually  
-![node and npm version screenshot](/Documentation/resources/app_node_version.png)
+![node and npm version screenshot](/Documentation/resources/aws/app_node_version.png)

@@ -2,7 +2,7 @@
 # cicd
 CICD is considered the backbone of DevOps practices and automation, It plays vital, challenging and exciting role in DevOps culture, and growing numbers of companies releasing software in minutes with the adoption of CICD practices.
 
-![cicd workflow](/Documentation/resources/cicd_workflow.png)  
+![cicd workflow](/Documentation/resources/cicd/cicd_workflow.png)  
 
 ## What is a CICD Pipeline
 The CI/CD pipeline is all about automation: Initiating code builds, automated testing, and automated deploying to the staging or production environments. It’s complex and exciting at the same time, but incredibly fast, if the output of any stage fails, the next stage will also fail.
@@ -29,12 +29,19 @@ Continuous Deployment goes one step further than continuous delivery, with this 
 ## what is jenkins
 The leading open-source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.
 
-![jenkins pipeline](/Documentation/resources/jenkins.png)  
+![jenkins pipeline](/Documentation/resources/cicd/jenkins.png)  
 
-
+## jenkins jobs
+- jobs are the name of any task you set in jenkins
+- you can make a job to do anything you would do locally such as run scrips
+- you can make one job trigger another
+- making a job
+    - new item
+    - create job
+    - fill in task
 
 ## tools for CICD pipeline
-![cicd tools](/Documentation/resources/cicd_tools.png)  
+![cicd tools](/Documentation/resources/cicd/cicd_tools.png)  
 
 
 ## Why Jenkins

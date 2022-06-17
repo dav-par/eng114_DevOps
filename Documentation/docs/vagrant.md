@@ -3,7 +3,7 @@
 https://www.vagrantup.com/intro
 Vagrant is a tool for building and managing virtual machine environments in a single workflow. With an easy-to-use workflow and focus on automation, Vagrant lowers development environment setup time, increases production parity, and makes the "works on my machine" excuse a relic of the past.
 
-![Vagrant diagram](/Documentation/resources/vagrant.png)
+![Vagrant diagram](/Documentation/resources/vagrant/vagrant.png)
 
 ## Common commands
 `vagrant init` - initialise first install of a box  

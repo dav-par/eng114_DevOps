@@ -122,9 +122,8 @@ AWS Auto Scaling monitors your applications and automatically adjusts capacity t
 - Elastic load balancer
 - Network load balancer   
 
-![auto-scale](/Documentation/resources/auto_scale.png)   
-![auto-scale2](/Documentation/resources/auto_scale2.jpeg)   
-![auto-load](/Documentation/resources/auto_load.png)
+## Autoscaler
+![autoscaler](/Documentation/resources/aws/auto_scaler.jpeg)
 
 
 ## General notes

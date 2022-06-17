@@ -44,4 +44,4 @@ A virtual private cloud (VPC) is a secure, isolated private cloud hosted within 
 
 
 ## Diagram
-![nacl in aws](/Documentation/resources/nacl_in_aws.png)  
+![nacl in aws](/Documentation/resources/aws/nacl_in_aws.png)  
