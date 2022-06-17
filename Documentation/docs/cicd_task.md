@@ -5,28 +5,105 @@
 ## Documentation
 - [click here](/Documentation/docs/cicd.md)  
 
+## Prerequisite
+- app folder in a separate repo - [mine](https://github.com/dav-par/eng114_app)  
+- office 365 connector
+- github plugin
+- github publisher
+
 ## SSH to github
 - [git hub instructions](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 - `git remote set-url origin <SSH url>`
     - can be used to change the way you you push to an already cloned repo
     - good for keeping your `.gitignore` etc
 
-## make second key
-public key to github  
-private key to jenkins  
-ssh-keygen -t ed25519 -C "email@host.com"  
+
+## Build jenkins job for app
+- new item
+    - name
+    - freestyle project
+    - add
+- configure
+    - General  
+        - discard old builds
+            - 3 max build
+        - github project
+            - https link 
+                - `https://github.com/dav-par/eng114_app.git`
+    - Office 365 Connector
+        - restrict where project can be run
+            - `sparta-ubuntu-node`
+    - source code management
+        - see below for ssh
+        - choose branch to build
+    - build environment
+        - node and npm
+            - installation: Sparta-Node-JS
+            - npmrc file - system default
+            - cach location - Default (~/.npm or %APP DATA% pm-cache)
+    - build
+        ```
+        cd app
+        npm install
+        npm test
+        ```
+
+## SSH from github to jenkins
+- make an ssh key on your local host
+    - `ssh-keygen -t ed25519 -C "email@host.com"`
+- go to the github repo you want to automate and add the public key
+    - settings
+    - deploy keys
+    - add public key
+- go to the config of the jenkins file and add the private key to job
+    - source code management
+    - git
+    - repo url `SSH code link to github repo`
+    - Credentials
+        - add key
+        - jenkins
+        - kind - ssh
+        - username - group-name
+        - private key - enter directly
+        - add
+
 
 ## github webhooks
--
-
-## jenkins jobs
-- jobs are the name of any task you set in jenkins
-- you can make a job to do anything you would do locally such as run scrips
-- you can make one job trigger another
-- making a job
-    - new item
-    - create job
-    - fill in task
+- config file of the jenkins job
+    - build triggers
+        - github hook trigger for gitscm polling
+- github repo settings
+    - webhooks
+        - payload url
+            - jenkins-server/github-webhook
+            - `http://0.0.0.1:8080/github-webhook/`
+        - content type
+            - json
+        - triggers
+            - select individual events
+                - pushes
+                - pull requests
 
 ## Multistage Build with Jenkins
-- 
+- create dev branch on local host and push to github
+    - `git branch dev`
+    - `git checkout dev`
+    - `git push --set-upstream origin dev`
+- create new job `name-merge-dev-to-main`
+    - set up as above
+    - source code management git
+        - ssh to repo as before
+        - build main branch
+        - additional behaviours
+            - merge before build
+                - name of repo `origin`
+                - branch to merge to `dev`
+                - merge strategy `default`
+                - fast-forward mode `-ff`
+- create a job that builds dev branch
+- post-build actions
+    - Git publisher
+        - push only if build succeeds
+        - merge results
+        - branch to push `main`
+        - target remote name `origin`
