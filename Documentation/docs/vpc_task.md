@@ -51,6 +51,46 @@
 - no IPv6
 - tag using name
 
+## Creating an internet gateway and attaching it to the vpc
+- create internet gateway
+- tag following convention
+- attach to your vpc
+
+## subnets
+- Create two subnets
+- both on your vpc
+- public
+    - name using convention and add public
+    - no preference for AZs
+    - IPv4 CIDR block
+        - add a valid unused subnet
+        - 10.0.74.0/24
+    - tag using name
+- private
+    - name using convention and add private
+    - IPv4 CIDR block
+        - 10.0.75.0/24
+    - tag using name
+
+## Route table
+- private subnet
+    - This isn't needed and ensures your db doesn't connect to the internet
+- public subnet
+    - click route tables in the VPC panel
+    - create route table
+    - follow naming convention
+    - select your vc
+    - subnet associations
+        - edit subnet associations
+        - associate with your subnet
+    - edit routes - attaching internet gateway
+        - first route
+            destination 10.0.0.0/16
+            target local
+        - second route
+            - destination 0.0.0.0/0
+            - target is your internet gateway
+    
 
 ## creating a private subnet for mongodb
 - go to the vpc panel on aws - [link for eu-west-1](https://eu-west-1.console.aws.amazon.com/vpc/home?region=eu-west-1#Home:)
@@ -112,22 +152,3 @@
 ## Finishing db set up
 - go to your db security groups
 - change the access ip to your app ip 10.0.5.251/32
-
-## Route table
-- private subnet
-    - This isn't needed and ensures your db doesn't connect to the internet
-- public subnet
-    - click route tables in the VPC panel
-    - create route
-    - follow naming convention
-    - select your vc
-    - subnet associations
-        - associate with your subnet
-    - edit routes - attaching internet gateway, you may already have done this
-    - first route
-        destination 10.0.0.0/16
-        target local
-    - second route
-        - destination 0.0.0.0/0
-        - target is your internet gateway
- 
