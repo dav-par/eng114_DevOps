@@ -4,32 +4,32 @@
 ## Create VPC documentation
 [click here](/Documentation/docs/vpc.md)
 
-## Redploy two tier architecture on VPC
+## Redeploy two-tier architecture on VPC
 - Diagram first
-- Create private subnet for monogodb
+- Create a private subnet for monogodb
 - Design the public subnet and app ec2 connecting to the private subnet and db ec2
 - Rules
     - private ec2 and subnet must not have a public ip
 - Notes
     - public subnet already made
     - private subnet and db ec2 should not have public IP
-- Explain route table for private subnet
+- Explain route table for the private subnet
     - rules
     - do you need one
 - Optional
-    - create NACL for your subnets for an addtional layer
+    - create NACL for your subnets for an additional layer
 
 ## Diagram
 ![first draft](/Documentation/resources/aws/vpc_first.png)  
 
 ## Prerequisites
-To complete this task successfully you will need
+### To complete this task successfully you will need
 - Fully scripted and seeded db ami - [my script to set up ami](/aws_setup/db_setup/aws_db_provision.sh)
 - Full script to set up app on ec2 which starts the app automatically - [my script](/aws_setup/app_setup/aws_app_provision.sh)
 - VPC set up with internet gateway. public subnet and route table
     - VPC (empty house)
         -Only use IP4
-        - Use chosen CIDR block, in our case this is 10.0.0.4/16
+        - Use chosen CIDR block, in our case this is 10.0.0.0/16
     - IG
         - Create and attach to VPC
     - Subnet
@@ -43,15 +43,24 @@ To complete this task successfully you will need
     - an agreed IPv4 CIDR block to create your private subnet on
     - More details instructions to follow
 
+## creating a vpc (empty house)
+- name using convention
+- IPv4 CIDR manual input
+    - use your chosen CIDR block
+    - 10.0.0.4/16
+- no IPv6
+- tag using name
+
+
 ## creating a private subnet for mongodb
-- go to the vpc pannel on aws - [link for eu-west-1](https://eu-west-1.console.aws.amazon.com/vpc/home?region=eu-west-1#Home:)
+- go to the vpc panel on aws - [link for eu-west-1](https://eu-west-1.console.aws.amazon.com/vpc/home?region=eu-west-1#Home:)
     - check your region
-- click subnets in the right pannel
+- click subnets in the right panel
 - click create subnet
 - choose your VPC
-- name the subnet following naming convention
+- name the subnet following the naming convention
     - course-name-subnet-private
-- No prefrence for Availability Zone
+    - No preference for Availability Zone
 - Choose a valid IPc4 CIDR block
     - I used 10.0.16.0/24
     - if working with several people, agree on these in advance
@@ -60,13 +69,13 @@ To complete this task successfully you will need
 ## Launching the mongoDB instance
 - Go to the EC2 instances panel - [link](https://eu-west-1.console.aws.amazon.com/ec2/v2/home?region=eu-west-1#Home:)
 - Launch instance
-- Select your prepaired db AMI
+- Select your prepared db AMI
 - t2.micro
 - Configure instance details
     - Choose your VPC
     - Choose your private subnet
     - make sure public IP is disabled
-    - no userdata needed as the ami is ready
+    - no userdata is needed as the ami is ready
 - 8gig
 - Tag following naming convention
     - course-name-db-private-subnet
@@ -102,7 +111,7 @@ To complete this task successfully you will need
 
 ## Finishing db set up
 - go to your db security groups
-- change the acces ip to your app ip 10.0.5.251/32
+- change the access ip to your app ip 10.0.5.251/32
 
 ## Route table
 - private subnet
@@ -113,7 +122,7 @@ To complete this task successfully you will need
     - follow naming convention
     - select your vc
     - subnet associations
-        - assoicate with your subnet
+        - associate with your subnet
     - edit routes - attaching internet gateway, you may already have done this
     - first route
         destination 10.0.0.0/16
