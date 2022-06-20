@@ -67,7 +67,6 @@
         - private key - enter directly
         - add
 
-
 ## github webhooks
 - config file of the jenkins job
     - build triggers
@@ -84,7 +83,7 @@
                 - pushes
                 - pull requests
 
-## Multistage Build with Jenkins
+## Job to push dev to main once successfully tested
 - create dev branch on local host and push to github
     - `git branch dev`
     - `git checkout dev`
@@ -107,3 +106,39 @@
         - merge results
         - branch to push `main`
         - target remote name `origin`
+
+
+## Job to push working build to EC2
+- set up and ec2
+    - own vpc
+    - public subnet
+    - security groups
+        - ssh from local (22)
+        - http from all (80)
+        - app from all (3000)
+        - ssh from jenkins (port 22, jenkins ip server/32)
+- set up jenkins job
+    - description
+    - discard old build
+        - max 3 builds
+    - github project
+        - https link to app repo
+    - source code manangment
+        - Git
+            - ssh git with repo key
+            - main branch
+    - build triggers
+        - Build after other projects are build
+            - your merge job
+        - SSH agent
+            - aws pem key
+    - build
+        - execute shell
+            ```
+            #!/bin/bash
+            ls
+            rsync -avz -e "ssh -o StrictHostKeyChecking=no" . ubuntu@34.244.68.124:
+            ssh -A -o "StrictHostKeyChecking=no" ubuntu@34.244.68.124 << EOF
+            chmod +x jenkins_provision.sh
+            sudo ./jenkins_provision.sh
+            ```

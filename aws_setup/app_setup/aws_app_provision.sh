@@ -18,7 +18,7 @@ npm install pm2 -g
 npm install n -g && n stable
 
 #clone app from github
-git clone https://github.com/dav-par/eng114_app.git /home/ubuntu/app
+git clone https://github.com/dav-par/app_for_scripting.git /home/ubuntu/app
 
 #replace nginx default and run it
 sudo rm -rf /etc/nginx/sites-available/default
@@ -32,3 +32,24 @@ source ~/.bashrc
 
 cd /home/ubuntu/app/app && npm install
 nohup node app.js > /dev/null 2>&1 &
+
+
+```
+# steps
+#!/bin/bash
+ls
+rsync -avz -e "ssh -o StrictHostKeyChecking=no" . ubuntu@54.74.252.200:~/.
+ssh -A -o "StrictHostKeyChecking=no" ubuntu@54.74.252.200 << EOF
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get install nginx -y
+sudo systemctl restart nginx
+sudo systemctl enable nginx
+sudo apt-get install nodejs -y
+sudo apt install npm -y
+npm install pm2 -g
+npm install n -g && n stable
+cd app
+npm install
+npm start
+```
