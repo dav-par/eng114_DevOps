@@ -32,24 +32,3 @@ source ~/.bashrc
 
 cd /home/ubuntu/app/app && npm install
 nohup node app.js > /dev/null 2>&1 &
-
-
-```
-# steps
-#!/bin/bash
-ls
-rsync -avz -e "ssh -o StrictHostKeyChecking=no" . ubuntu@54.74.252.200:~/.
-ssh -A -o "StrictHostKeyChecking=no" ubuntu@54.74.252.200 << EOF
-sudo apt-get update -y
-sudo apt-get upgrade -y
-sudo apt-get install nginx -y
-sudo systemctl restart nginx
-sudo systemctl enable nginx
-sudo apt-get install nodejs -y
-sudo apt install npm -y
-npm install pm2 -g
-npm install n -g && n stable
-cd app
-npm install
-npm start
-```
