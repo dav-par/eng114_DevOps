@@ -17,10 +17,10 @@ The CI/CD pipeline is all about automation: Initiating code builds, automated te
 ## Continuous Integration (CI)
 Developers merge/commit code to the master branch multiple times a day, fully automated build and test process which gives feedback within a few minutes, by doing so, you avoid the integration h#ell that usually happens when people wait for release day to merge their changes into the release branch.
 
-## Continuous Delivery (CI)
+## Continuous Delivery (CD)
 Continuous Delivery is an extension of continuous integration to make sure that you can release new changes to your customers quickly in a sustainable way. This means that on top of having automated your testing, you also have automated your release process and you can deploy your application at any point of time by clicking on a button. In continuous delivery, the deployment is completed manually.
 
-## Continuous Deployment
+## Continuous Deployment (CDE)
 Continuous Deployment goes one step further than continuous delivery, with this practice, every change that passes all stages of your production pipeline is released to your customers, there is no human intervention, and only a failed test will prevent a new change to be deployed to production.
 
 ## key difference
