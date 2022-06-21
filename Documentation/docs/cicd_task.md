@@ -109,6 +109,12 @@
 
 
 ## Job to push working build to EC2
+
+- prerequisites
+    - repo with:
+        - app
+        - default file for nginx
+        - jenkins app provisioning script - [link](https://github.com/dav-par/eng114_app/blob/main/jenkins_provision.sh)
 - set up and ec2
     - own vpc
     - public subnet

@@ -7,7 +7,7 @@ I have started an intensive full-time DevOps course with Sparta Global, we have 
 [Git](/Documentation/docs/git_readme.md)  
 [Architecture](/Documentation/docs/Architecture.md)  
 [Cloud Computing](/Documentation/docs/cloud_computing.md)  
-[cicd](/Documentation/docs/cicd.md) - [task](/Documentation/docs/cicd_task.md)  
+[cicd](/Documentation/docs/cicd.md) - [task](/Documentation/docs/cicd_task.md) - [jenkins setup](/Documentation/docs/jenkins_task.md)  
 [AWS](/Documentation/docs/aws.md) - [task](/Documentation/docs/aws_task.md)  
 [VPC](/Documentation/docs/vpc.md) - [task](/Documentation/docs/vpc_task.md)  
 [vagrant](/Documentation/docs/vagrant.md) - [task](/Documentation/docs/vagrant_task.md)  
