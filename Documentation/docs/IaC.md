@@ -13,9 +13,9 @@ IaC is the process of using code to provision computers, usually hosted at a dat
 
 
 ## tools available
-[IaC tools](/Documentation/resources/IaC/tools.png)  
-[IaC tool stages](/Documentation/resources/IaC/tools2.png)  
-[IaC tool comparison](/Documentation/resources/IaC/tools3.png)  
+![IaC tools](/Documentation/resources/IaC/tools.png)  
+![IaC tool stages](/Documentation/resources/IaC/tools2.png)  
+![IaC tool comparison](/Documentation/resources/IaC/tools3.png)  
 
 ## Configuration management and orchestration under IaC
 
@@ -58,4 +58,3 @@ IaC is the process of using code to provision computers, usually hosted at a dat
 - benefits
     - a fully automated process using robust tools
 
-    
