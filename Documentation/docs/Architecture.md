@@ -21,7 +21,8 @@ Hybird is a mix of the two
 
 ![Cloud](/Documentation/resources/software_architecture/cloud.png)
 
-## On prim
+## On premise (on prem)
+used local machines
 
 ## Cloud
 

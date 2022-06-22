@@ -23,7 +23,7 @@ IaC is the process of using code to provision computers, usually hosted at a dat
     - configuring a server using a tool like chef, puppet or ansible
     - happens repeatedly, unlike provisioning which is usually a one-off
     - it brings consistency to the infrastructure
- 
+
 - orchestration (e.g. Terraform)
     - arranging or coordinating multiple systems
     - running the same task on lots of servers at once but not necessarily all of them
@@ -37,6 +37,7 @@ IaC is the process of using code to provision computers, usually hosted at a dat
 
 - benefits
     - Human readable automation (easy to use)
+        - YAML
     - Powerful with a high level of configuration
     - Agentless
         - uses OpenSSH and WinRM
@@ -54,7 +55,6 @@ IaC is the process of using code to provision computers, usually hosted at a dat
     - load balancers
     - servers
 - Ansible then deploys the app to that hardware 
-
 - benefits
     - a fully automated process using robust tools
 

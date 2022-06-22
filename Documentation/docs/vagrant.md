@@ -13,6 +13,9 @@ Vagrant is a tool for building and managing virtual machine environments in a si
 `vagrant up` - load file  
 `vagrant ssh` - ssh in  
 
+## Tips
+when in vagrant `ctrl-z` acts as `ctrl-c` without closing the ssh session
+
 ## Set up your provisions file
 A provisionsing file is a bash script that you can call when setting up a vm using vagrant  
 Use `nano provision.sh` to make it in nano  

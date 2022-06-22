@@ -19,3 +19,11 @@ git is a method of version control and can be combined with github for online ve
 ## Extra commands
 - `git reset --hard origin/main`
     - forces a pull and reset a branch
+
+## fixing .gitignore not tracking
+```
+git rm -r --cached .
+git add .
+git commit -m "fixed untracked files"
+git push
+```
