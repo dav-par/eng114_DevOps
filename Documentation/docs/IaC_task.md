@@ -75,3 +75,4 @@ sudo apt-get install ansible -y
         - 6 ansible playbooks
     - runs the playbooks which set up the db and web machine
     - launches the app on the web machine
+- go to http://192.168.33.10/posts on your web browser to see if it worked in full
