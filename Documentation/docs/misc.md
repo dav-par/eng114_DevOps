@@ -57,15 +57,13 @@ An Entity Relationship (ER) Diagram is a type of flowchart that illustrates how 
 
 ## microservices arc
 
-## kubneties
+## kubernetes
 -mangers docker apps
 
-## volume
- 
-## future to do
-aws certification
-kubernetties certification#
 
+## future to do
+- aws certification
+- kubernetes certification
 
 ## CRUD
 Create
@@ -74,8 +72,8 @@ Update
 Delete
 
 
-service level agreement (sla)
-service level objectives (slo)
-service level indicators (sli)
-site reliability engineer (sre)
+service level agreement (sla)  
+service level objectives (slo)  
+service level indicators (sli)  
+site reliability engineer (sre)  
 
