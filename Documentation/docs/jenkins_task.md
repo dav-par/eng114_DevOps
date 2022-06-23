@@ -52,6 +52,8 @@ sudo apt-get install jenkins
 
 ## configuring the server
 - got to the ip of your server on port 8080
+- `sudo cat /var/lib/jenkins/secrets/initialAdminPassword`
+    - via ssh to get the password
 - install suggested plugins
 - make an admin account
 - leave the address alone
@@ -69,3 +71,20 @@ sudo apt-get install jenkins
     - add nodejs
     - name nodejs
     - version 13.3.0
+
+
+## full userdata to install jenkins on a blank ec2
+```
+#!/bin/bash
+sudo apt update -y && sudo apt upgrade -y
+sudo apt install openjdk-11-jre -y
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee \
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
+sudo systemctl enable jenkins
+sudo systemctl start jenkins
+```

@@ -58,3 +58,14 @@ IaC is the process of using code to provision computers, usually hosted at a dat
 - benefits
     - a fully automated process using robust tools
 
+## Ansible
+- runs on your controller machine
+- can do adhoc code or playbooks(scripts for ansible)
+    - [adhoc cheat sheet](/Documentation/resources/IaC/Ansible-Cheat_Sheet_Edureka.pdf)
+- playbooks are written in yaml, also used by:
+    - docker
+    - compose
+    - kubernetes
+    - cloud formation
+- store them in /etc/ansible
+- [link to ansible IaC task](/Documentation/docs/IaC_task.md)

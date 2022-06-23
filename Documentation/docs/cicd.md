@@ -25,6 +25,10 @@ Continuous Deployment goes one step further than continuous delivery, with this 
 
 ## key difference
 - in CD the deployment is done manually, in CDE the deployment is also automated
+- CD is good when the business has controlled releases or wants to wait for a time with less user load e.g. bank phone app
+- CD is best if the risk is so high that deployment going wrong is greater than the risk of "slow-release"
+- CDE is good for things which need to be updated quickly e.g. security update
+- CDE is good for services that need 100% uptime or they will lose business e.g. netflix, amazon, ebay
 
 ## what is jenkins
 The leading open-source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.

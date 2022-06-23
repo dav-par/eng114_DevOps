@@ -51,8 +51,27 @@ sudo apt-get install ansible -y
     - sudo npm install
     - npm start
 
-# questions
+## questions
 - why are we in the ansible folder
 - can we automate adding the ssh keys
 - can we update/upgrade in the vagrant file
 - can we automate gitclone and script running
+
+
+## Updated task
+- fully automated from `vagrant up` 
+- use this [vagrant file](/IaC_ansible/Vagrant/Vagrantfile) in a folder with this [provisioning script](/IaC_ansible/controller_pro.sh)
+    - launches all three machines
+    - updates && upgrades the web and db machine
+    - installs ansible on the controller
+    - copies over the provisioning script to the controller and runs it there
+- the script
+    - updates && upgrades
+    - installs ansible and dependencies
+    - clones a github repo with
+        - the app folder
+        - default file to set up a reverse proxy
+        - config file for mongodb to allow it to accept all connections
+        - 6 ansible playbooks
+    - runs the playbooks which set up the db and web machine
+    - launches the app on the web machine

@@ -109,7 +109,6 @@
 
 
 ## Job to push working build to EC2
-
 - prerequisites
     - repo with:
         - app

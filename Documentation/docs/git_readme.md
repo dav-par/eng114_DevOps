@@ -27,3 +27,6 @@ git add .
 git commit -m "fixed untracked files"
 git push
 ```
+
+## Best practice
+- don't work in the main branch
