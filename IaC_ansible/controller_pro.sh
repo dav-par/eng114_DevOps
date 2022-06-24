@@ -22,4 +22,3 @@ ansible-playbook 2_proxy.yml
 ansible-playbook 3_nodejs.yml
 ansible-playbook 4_mongo.yml
 ansible-playbook 5_copy_app.yml
-ansible-playbook 6_run_app.yml
