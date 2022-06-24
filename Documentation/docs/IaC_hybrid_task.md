@@ -42,6 +42,7 @@ aws_secret_key: <SECRET KEY>
     - enter
 
 ## run playbooks
+- [here](https://github.com/dav-par/working_ansible)
 - `cd /etc/ansible/`
 - `sudo mv playbook.yml group_vars/`
 - `cd group_vars`
