@@ -6,7 +6,7 @@ I have started an intensive full-time DevOps course with Sparta Global, we have 
 [Terminal/Linux](/Documentation/docs/terminal.md)  
 [Git](/Documentation/docs/git_readme.md)  
 [Architecture](/Documentation/docs/Architecture.md)  
-[Infrastructure as Code (IaC)](/Documentation/docs/IaC.md) - [IaC task](/Documentation/docs/IaC_task.md)  
+[Infrastructure as Code (IaC)](/Documentation/docs/IaC.md) - [IaC local task](/Documentation/docs/IaC_task.md) - [Iac hybrid task](/Documentation/docs/IaC_hybrid_task.md)    
 [Cloud Computing](/Documentation/docs/cloud_computing.md)  
 [Continuous Integration and Continuous Delivery (cicd)](/Documentation/docs/cicd.md) - [task](/Documentation/docs/cicd_task.md) - [jenkins setup](/Documentation/docs/jenkins_task.md)  
 [Amazon Web Services (AWS)](/Documentation/docs/aws.md) - [task](/Documentation/docs/aws_task.md)  
