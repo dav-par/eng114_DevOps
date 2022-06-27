@@ -1,3 +1,4 @@
+[link to index](/readme.md)  
 # IaC hybrid task
 controller local
 nodes online
@@ -49,6 +50,10 @@ aws_secret_key: <SECRET KEY>
 - `sudo ansible-playbook playbook.yml --ask-vault-pass --tags create_ec2`
     - runs the ec2 creation playbook
 - vault password
+
+## add to host file
+- `ec2-instance ansible_host=3.251.86.93 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/shazid-jenkins-server.pem`
+- add port 80 to ec2 security group
 
 ## errors
 - fatal: [localhost]: FAILED! => {"changed": false, "msg": "Instances with id(s) ['i-0c2154f122e72388c'] were created previously but have since been terminated - use a (possibly different) 'instanceid' parameter"}
