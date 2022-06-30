@@ -44,7 +44,13 @@ IaC is the process of using code to provision computers, usually hosted at a dat
         - no agent to exploit or update
 
 ## Terraform
-- With Terraform, we describe our complete infrastructure as code, even as it spans multiple service providers. Our servers may come from AWS, our DNS may come from CloudFlare, and our database may come from Heroku. Terraform will build all these resources across all these providers in parallel.
+- HashiCorp Terraform is an infrastructure as code tool that lets you define both cloud and on-prem resources in human-readable configuration files that you can version, reuse, and share.
+- You can then use a consistent workflow to provision and manage all of your infrastructure throughout its lifecycle. Terraform can manage low-level components like compute, storage, and networking resources, as well as high-level components like DNS entries and SaaS features.
+- benefits
+    - open source
+    - simple syntax
+    - modularity
+    - multi-cloud
 
 
 ## Ansible and Terraform in DevOps
