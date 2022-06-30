@@ -89,7 +89,7 @@ resource "aws_security_group" "eng114_david_sg_app_terra"{
 		from_port = 22
 		to_port = 22
 		protocol = "tcp"
-		cidr_blocks = [var.my_ip]
+		cidr_blocks = ["${chomp(data.http.myip.body)}/32"]
 	}
 
     ingress {

@@ -24,8 +24,3 @@ variable "availability_zone" {
   default = "eu-west-1a"
 }
 
-
-variable "my_ip" {
-    default = "94.4.90.120/32"
-
-}
