@@ -1,3 +1,5 @@
+[link to index](/readme.md)  
+[link to IaC home](/Documentation/docs/IaC.md)  
 # IaC task
 - set up 3 machines using vagrant
     - [vagrant file](/IaC_ansible/original_vagrantfile)

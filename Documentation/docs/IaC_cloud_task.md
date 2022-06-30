@@ -1,4 +1,6 @@
-[link to index](/readme.md)  
+[link to IaC home](/Documentation/docs/IaC.md)
+[link to index](/readme.md) 
+
 # IaC cloud task
 set up an ansible controller which can automatically launch the app and db with a click 
 
