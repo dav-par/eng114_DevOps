@@ -59,7 +59,7 @@
     controller.vm.provision "file", source: "local_controller_pro.sh", destination: "$HOME/"
 
     #gives the provison.sh file ablity to execute
-    controller.vm.provision "shell", inline: "sudo chmod +x _local_controller_pro.sh"
+    controller.vm.provision "shell", inline: "sudo chmod +x local_controller_pro.sh"
 
     #Runs the file
     controller.vm.provision "shell", inline: "sudo ./local_controller_pro.sh"
