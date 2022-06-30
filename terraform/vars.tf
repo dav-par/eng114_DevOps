@@ -4,7 +4,6 @@ variable "environment" {
 
 variable "vpc_cidr" {
   description = "CIDR block for VPC"
-  type        = string
   default     = "10.5.0.0/16"
 }
 
@@ -26,3 +25,7 @@ variable "availability_zone" {
 }
 
 
+variable "my_ip" {
+    default = "94.4.90.120/32"
+
+}
