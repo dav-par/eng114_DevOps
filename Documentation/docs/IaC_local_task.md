@@ -1,6 +1,6 @@
 # IaC task
 - set up 3 machines using vagrant
-    - [vagrant file](/IaC_ansible/Vagrant/Vagrantfile)
+    - [vagrant file](/IaC_ansible/original_vagrantfile)
     - ssh in to each and update and upgrade
     - `sudo apt update -y && sudo apt upgrade -y`
     - install ansible on the controller
@@ -60,7 +60,7 @@ sudo apt-get install ansible -y
 
 ## Updated task
 - fully automated from `vagrant up` 
-- use this [vagrant file](/IaC_ansible/Vagrantfile) in a folder with this [provisioning script](/IaC_ansible/controller_pro.sh)
+- use this [vagrant file](/IaC_ansible/Vagrantfile) in a folder with this [provisioning script](/IaC_ansible/local_controller_pro.sh)
     - launches all three machines
     - updates && upgrades the web and db machine
     - installs ansible on the controller

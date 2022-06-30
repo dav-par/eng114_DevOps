@@ -56,13 +56,13 @@
     controller.vm.network :private_network, ip: "192.168.33.12"
 
     #copy provision file over
-    controller.vm.provision "file", source: "controller_pro.sh", destination: "$HOME/"
+    controller.vm.provision "file", source: "local_controller_pro.sh", destination: "$HOME/"
 
     #gives the provison.sh file ablity to execute
-    controller.vm.provision "shell", inline: "sudo chmod +x controller_pro.sh"
+    controller.vm.provision "shell", inline: "sudo chmod +x _local_controller_pro.sh"
 
     #Runs the file
-    controller.vm.provision "shell", inline: "sudo ./controller_pro.sh"
+    controller.vm.provision "shell", inline: "sudo ./local_controller_pro.sh"
     
 
    end     
