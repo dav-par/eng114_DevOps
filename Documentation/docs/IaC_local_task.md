@@ -40,7 +40,7 @@ sudo apt-get install ansible -y
     - should get green pong response
 - `cd /etc/ansible/`
     - navigate to ansible folder
-- `sudo git clone https://github.com/dav-par/ansible` to get the scripts
+- `sudo git clone -b vagrant https://github.com/dav-par/working_ansible.git` to get the scripts
 -  `sudo mv ansible/* ansible/.* .` - moves scripts down a level
 - run these scripts on the controller
     - nginx, proxy, node, config 

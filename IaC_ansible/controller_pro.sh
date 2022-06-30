@@ -18,7 +18,7 @@ sudo pip install boto
 sudo pip install boto3
 
 sudo rm -rf /etc/ansible
-sudo git clone https://github.com/dav-par/working_ansible.git /etc/ansible
+sudo git clone -b vagrant https://github.com/dav-par/working_ansible.git /etc/ansible
 export ANSIBLE_HOST_KEY_CHECKING=False
 
 cd /etc/ansible
