@@ -60,7 +60,7 @@ sudo apt-get install ansible -y
 
 ## Updated task
 - fully automated from `vagrant up` 
-- use this [vagrant file](/IaC_ansible/Vagrant/Vagrantfile) in a folder with this [provisioning script](/IaC_ansible/controller_pro.sh)
+- use this [vagrant file](/IaC_ansible/Vagrantfile) in a folder with this [provisioning script](/IaC_ansible/controller_pro.sh)
     - launches all three machines
     - updates && upgrades the web and db machine
     - installs ansible on the controller
