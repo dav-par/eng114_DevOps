@@ -51,6 +51,7 @@ IaC is the process of using code to provision computers, usually hosted at a dat
     - simple syntax
     - modularity
     - multi-cloud
+    - immutable and version control built in
 - installing
     - put the exe somewhere easy to find and run it
     - update the path to include the folder the exe is in
