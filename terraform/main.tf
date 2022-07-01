@@ -16,7 +16,7 @@ resource "aws_instance" "app_instance"{
    
 # name the instance
     tags = {
-        Name = "eng114_david_terraform_app"
+        Name = "eng114_david_terraform_app_non_auto"
     }
 	
 # add key
@@ -30,6 +30,7 @@ resource "aws_instance" "db_instance"{
 	instance_type = "t2.micro"
     subnet_id = "${aws_subnet.private_subnet.id}"
     vpc_security_group_ids = ["${aws_security_group.eng114_david_sg_db_terra.id}"]
+    private_ip = "10.5.242.225"
 
 # enable a public ip
     associate_public_ip_address = false
