@@ -112,6 +112,9 @@ Bash scripts are files you can write that run a sequence of tasks if they are al
     - chmod 700 file1 (user = rwx)
     - chmod 640 file1 (user = rw, group = r)
 - https://linuxhandbook.com/chmod-calculator/
+- sometimes it will say the script isn't found
+    - this is usually a problem with the shebang (!#)
+    - run dos2unix to fix
 
 ## Environment variables in linux
 - A variable is a way to refer to a stored value or object is some code.

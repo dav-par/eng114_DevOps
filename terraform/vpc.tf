@@ -55,12 +55,18 @@ resource "aws_route_table" "public" {
   }
 }
 
-# Route for Internet Gateway
+
+ #Route for Internet Gateway
 resource "aws_route" "public_internet_gateway" {
   route_table_id         = aws_route_table.public.id
   destination_cidr_block = "0.0.0.0/0"
   gateway_id             = aws_internet_gateway.ig.id
 
+}
+
+resource "aws_route_table_association" "public" {
+  subnet_id      = aws_subnet.public_subnet.id
+  route_table_id = aws_route_table.public.id
 }
 
 # sec groups
@@ -85,15 +91,15 @@ resource "aws_security_group" "eng114_david_sg_app_terra"{
 	}
 
 	ingress {
-		description = "SSH from home"
+		description = "SSH from localhost"
 		from_port = 22
 		to_port = 22
 		protocol = "tcp"
-		cidr_blocks = ["${chomp(data.http.myip.body)}/32"]
+		cidr_blocks = ["0.0.0.0/0"] #["${chomp(data.http.myip.body)}/32"]
 	}
 
     ingress {
-        description = "Allow access to port 3000"
+        description = "port 3000 for app"
         from_port =  3000
         to_port = 3000
         protocol = "tcp"
@@ -117,7 +123,7 @@ resource "aws_security_group" "eng114_david_sg_app_terra"{
 
 resource "aws_security_group" "eng114_david_sg_db_terra"{
 	name = "eng114_david_sg_db_terra"
-	description = "Allow traffic on port 27017 for mongoDB"
+	description = "27017 for mongoDB"
 	vpc_id = aws_vpc.vpc.id
 
 	ingress {
@@ -126,6 +132,16 @@ resource "aws_security_group" "eng114_david_sg_db_terra"{
 		to_port = 27017
 		protocol = "tcp"
 	}
+
+## remove in productions
+	ingress {
+		description = "SSH from localhost"
+		from_port = 22
+		to_port = 22
+		protocol = "tcp"
+		cidr_blocks = ["${chomp(data.http.myip.body)}/32"]
+	}
+
 
 	egress {
 		description = "All traffic out"

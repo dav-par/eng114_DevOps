@@ -24,3 +24,18 @@ variable "availability_zone" {
   default = "eu-west-1a"
 }
 
+variable "key_id" {
+  default = "eng144_david_terra"
+}
+
+variable "app_ami" {
+  default = "ami-0b47105e3d7fc023e"
+}
+
+variable "db_ami" {
+  default = "ami-0eecf033d2b64a2cb"
+}
+
+variable "controller_ami" {
+  default = "ami-0b76dbf60d4901602"
+}
