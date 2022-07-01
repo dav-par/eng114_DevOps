@@ -9,7 +9,7 @@ resource "aws_vpc" "vpc" {
 }
 
 # Subnets
-# Internet Gateway for Public Subnet
+# Internet Gateway for Public Subnet############################################
 resource "aws_internet_gateway" "ig" {
   vpc_id = aws_vpc.vpc.id
   tags = {
@@ -18,7 +18,7 @@ resource "aws_internet_gateway" "ig" {
   }
 }
 
-# Public subnet
+# Public subnet############################################
 resource "aws_subnet" "public_subnet" {
   vpc_id                  = aws_vpc.vpc.id
   cidr_block              = var.public_subnets_cidr
@@ -32,7 +32,7 @@ resource "aws_subnet" "public_subnet" {
 }
 
 
-# Private Subnet
+# Private Subnet############################################
 resource "aws_subnet" "private_subnet" {
   vpc_id                  = aws_vpc.vpc.id
   cidr_block              = var.private_subnets_cidr
@@ -45,7 +45,7 @@ resource "aws_subnet" "private_subnet" {
   }
 }
 
-# Routing tables to route traffic for Public Subnet
+# Routing tables to route traffic for Public Subnet############################################
 resource "aws_route_table" "public" {
   vpc_id = aws_vpc.vpc.id
 
@@ -56,7 +56,7 @@ resource "aws_route_table" "public" {
 }
 
 
- #Route for Internet Gateway
+ #Route for Internet Gateway############################################
 resource "aws_route" "public_internet_gateway" {
   route_table_id         = aws_route_table.public.id
   destination_cidr_block = "0.0.0.0/0"
@@ -69,7 +69,7 @@ resource "aws_route_table_association" "public" {
   route_table_id = aws_route_table.public.id
 }
 
-# sec groups
+# sec groups########################################################################################
 resource "aws_security_group" "eng114_david_sg_app_terra"{
 	name = "eng114_david_sg_app_terra"
 	vpc_id = aws_vpc.vpc.id
@@ -120,28 +120,30 @@ resource "aws_security_group" "eng114_david_sg_app_terra"{
   }
 
 }
-
+########################################################################################
 resource "aws_security_group" "eng114_david_sg_db_terra"{
 	name = "eng114_david_sg_db_terra"
 	description = "27017 for mongoDB"
 	vpc_id = aws_vpc.vpc.id
+
 
 	ingress {
 		description = "27017 from app instance"
 		from_port = 27017
 		to_port = 27017
 		protocol = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
 	}
 
-## remove in productions
+
+## remove in productions########################################################################################
 	ingress {
 		description = "SSH from localhost"
 		from_port = 22
 		to_port = 22
 		protocol = "tcp"
-		cidr_blocks = ["${chomp(data.http.myip.body)}/32"]
+		cidr_blocks = ["0.0.0.0/0"] #["${chomp(data.http.myip.body)}/32"]
 	}
-
 
 	egress {
 		description = "All traffic out"

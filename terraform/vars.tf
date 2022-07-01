@@ -29,13 +29,13 @@ variable "key_id" {
 }
 
 variable "app_ami" {
-  default = "ami-0b47105e3d7fc023e"
+  default = "ami-0569261d6635e1cff"
 }
 
 variable "db_ami" {
-  default = "ami-0eecf033d2b64a2cb"
+  default = "ami-075574b4670425b76"
 }
 
 variable "controller_ami" {
-  default = "ami-0b76dbf60d4901602"
+  default = "ami-0b756558a3243292d"
 }

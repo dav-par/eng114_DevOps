@@ -3,7 +3,7 @@ provider "aws" {
 	region = "eu-west-1"
 }
 
-#resource block to configure app instance
+#resource block to configure app instance###########################################################
 resource "aws_instance" "app_instance"{
 # choose your ami and instance type
 	ami = var.app_ami
@@ -23,7 +23,7 @@ resource "aws_instance" "app_instance"{
     key_name = var.key_id
 }
 
-#resource block to configure db instance
+#resource block to configure db instance###########################################################
 resource "aws_instance" "db_instance"{
 # choose your ami and instance type
 	ami = var.db_ami
@@ -43,7 +43,7 @@ resource "aws_instance" "db_instance"{
     key_name = var.key_id
 }
 
-#resource block to configure controller instance
+#resource block to configure controller instance###########################################################
 resource "aws_instance" "controller_instance"{
 # choose your ami and instance type
 	ami = var.controller_ami
