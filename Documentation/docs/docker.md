@@ -23,3 +23,19 @@ Docker is an open source platform for building, deploying, and managing containe
 ## containers vs virtualisation
 -  Virtualization enables you to run multiple operating systems on the hardware of a single physical server, while containerization enables you to deploy multiple applications using the same operating system on a single virtual machine or server. 
 - Virtual machines are great for supporting applications that require an operating system’s full functionality when you want to deploy multiple applications on a server, or when you have a wide variety of operating systems to manage. Containers are a better choice when your biggest priority is to minimize the number of servers you’re using for multiple applications.
+
+## docker commands
+- `docker run -d -p 80:80 nginx`
+    - downloads and runs nginx on port 80
+- `docker ps`
+    - see containers that are running
+    - `-a` - see all
+- `docker rm <<CONTAINTER ID>>`
+    - stops container running
+    - `-f` to force it
+- `docker exec -it <<CONTAINER ID>> bash`
+    - runs bash on the container
+
+
+## notes
+- use `alias docker="winpty docker"` if `docker` command isn't working

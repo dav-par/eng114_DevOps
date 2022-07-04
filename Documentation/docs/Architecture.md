@@ -16,6 +16,10 @@ In two-tier you separate out the front end and the back end so that the front en
 
 ![two tier app set up](/Documentation/resources/software_architecture/two_tier.png)
 
+
+## Two tier
+In two-tier you separate out the front end and the back end so that the front end runs with the client and the back end with the hos
+
 ## Hybrid 
 Hybird is a mix of the two
 
