@@ -18,7 +18,7 @@ resource "aws_internet_gateway" "ig" {
   }
 }
 
-# Public subnet############################################
+# Public subnets############################################
 resource "aws_subnet" "public_subnet" {
   vpc_id                  = aws_vpc.vpc.id
   cidr_block              = var.public_subnets_cidr

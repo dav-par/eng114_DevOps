@@ -31,6 +31,7 @@ resource "aws_instance" "db_instance"{
     subnet_id = "${aws_subnet.private_subnet.id}"
     vpc_security_group_ids = ["${aws_security_group.eng114_david_sg_db_terra.id}"]
     private_ip = "10.5.242.225"
+    
 
 # enable a public ip
     associate_public_ip_address = false
