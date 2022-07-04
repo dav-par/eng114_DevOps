@@ -37,7 +37,7 @@ variable "key_id" {
 }
 
 variable "app_ami" {
-  default = "ami-0569261d6635e1cff"
+  default = "ami-0fcb2ff41055e4a93"
 }
 
 variable "db_ami" {
