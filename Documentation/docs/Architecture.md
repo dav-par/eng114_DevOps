@@ -17,8 +17,8 @@ In two-tier you separate out the front end and the back end so that the front en
 ![two tier app set up](/Documentation/resources/software_architecture/two_tier.png)
 
 
-## Two tier
-In two-tier you separate out the front end and the back end so that the front end runs with the client and the back end with the hos
+## Microservices
+Microservice architecture, or simply microservices, is a distinctive method of developing software systems that tries to focus on building single-function modules with well-defined interfaces and operations. The trend has grown popular in recent years as Enterprises look to become more Agile and move towards a DevOps and continuous testing.
 
 ## Hybrid 
 Hybird is a mix of the two
