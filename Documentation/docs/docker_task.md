@@ -125,4 +125,4 @@ CMD ["node", "app.js"]
 - go to http://localhost:3000/posts to see the app running
 
 ## notes
-- if you make changes to the compose file then run `docker-compose build
+- if you make changes to the compose file then run `docker-compose build`
