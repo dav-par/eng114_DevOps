@@ -9,8 +9,8 @@ resource "aws_instance" "app_instance"{
 	ami = "ami-07b63aa1cfd3bc3a5"
 	instance_type = "t2.micro"
     subnet_id = "subnet-0e9792ee5dc08fbbd"
-    vpc_security_group_ids = "vpc-0dace77b8ccb63bb8
-    "
+    vpc_security_group_ids = "vpc-0dace77b8ccb63bb8"
+
 # enable a public ip
     associate_public_ip_address = true
    

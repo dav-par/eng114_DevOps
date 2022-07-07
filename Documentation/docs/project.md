@@ -18,6 +18,8 @@ We want to automate launching the app using:
     - ansible
     - docker
 
-## Step two
-- job to build two ec2s
-- 
+## Step two - use terraform to set up two ec2s
+- install terraform plugin
+- install terraform via the global plugin
+- install terraform via ssh on jenkins server
+
