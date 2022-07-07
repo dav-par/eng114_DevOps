@@ -1,0 +1,28 @@
+---
+#which api version
+apiVersion: apps/v1
+kind: Deployment # pod, service, replicateset # ASG
+
+metadata:
+  name: nginx
+spec:
+#lables and selectors are communicaiton channels between microservices
+  selector:
+    matchLabels:
+      app: nginx
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: davparcode/profile-page
+          resources:
+            limits:
+              memory: 512Mi
+              cpu: "1"
+          ports:
+            - containerPort: 80
+          imagePullPolicy: Always

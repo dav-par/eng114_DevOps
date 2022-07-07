@@ -1,0 +1,31 @@
+---
+#which api version
+apiVersion: apps/v1
+kind: Deployment # pod, service, replicateset # ASG
+
+metadata:
+  name: node
+spec:
+#lables and selectors are communicaiton channels between microservices
+  selector:
+    matchLabels:
+      app: node
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: node
+    spec:
+      containers:
+        - name: node
+          image: davparcode/eng114_app:v3
+          env:
+          - name: DB_HOST
+            value: mongodb://10.97.76.166/posts
+          resources:
+            limits:
+              memory: 512Mi
+              cpu: "1"
+          ports:
+            - containerPort: 3000
+          imagePullPolicy: Always
