@@ -1,3 +1,8 @@
+[link to index](/readme.md)  
+[IaC local task](/Documentation/docs/IaC_local_task.md)  
+[IaC hybrid task](/Documentation/docs/IaC_hybrid_task.md)  
+[IaC cloud task](/Documentation/docs/IaC_cloud_task.md)  
+[IaC Terraform task](/Documentation/docs/terraform.md)    
 # Infrastructure as Code (IaC)
 IaC is the process of using code to provision computers, usually hosted at a data center. The machine-readable code will tell the hardware exactly what environment it needs. In best practice, the code is version controlled so you can call on the exact version you need
 

@@ -1,5 +1,7 @@
 [link to index](/readme.md)  
-[link to IaC home](/Documentation/docs/IaC.md)  
+[IaC hybrid task](/Documentation/docs/IaC_hybrid_task.md)  
+[IaC cloud task](/Documentation/docs/IaC_cloud_task.md)  
+[IaC Terraform task](/Documentation/docs/terraform.md)    
 # IaC task
 - set up 3 machines using vagrant
     - [vagrant file](/IaC_ansible/original_vagrantfile)
