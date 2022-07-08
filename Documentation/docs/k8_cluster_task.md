@@ -2,7 +2,40 @@
 [K8 doc](/Documentation/docs/kubernetes.md)  
 ## run a K8 cluster on AWS
 - create an ec2 instance
-- user data
+- ubuntu 18.04
+- t2.medium
+- public subnet
+ -public ip
+- 10gig
+- pem key
+- below commands
+    - some of these will need approval but can probably be automated in a script
+```
+sudo apt update -y && sudo apt upgrade -y
+sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt update
+sudo apt install docker-ce -y
+
+curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+
+sudo usermod -aG docker $USER && newgrp docker
+
+minikube config set driver docker #didn't work
+
+minikube start --driver=docker
+
+minikube kubectl -- get po -A
+
+alias k="minikube kubectl --"
+```
+
+
+
+first try:
 ```
 sudo apt update -y
 sudo apt upgrade -y
@@ -25,36 +58,4 @@ https://phoenixnap.com/kb/install-kubernetes-on-ubuntu
 
 
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
-
-ubuntu 18.04
-t2.medium
-public subnet
-public ip
-10gig
-pem key
-
-some of these will need approval but can probably be automated in script
-
 ```
-sudo apt update -y && sudo apt upgrade -y
-sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-sudo apt update
-sudo apt install docker-ce
-
-curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
-sudo install minikube-linux-amd64 /usr/local/bin/minikube
-
-
-sudo usermod -aG docker $USER && newgrp docker
-
-minikube config set driver docker
-
-minikube start --driver=docker
-
-minikube kubectl -- get po -A
-
-alias kubectl="minikube kubectl --"
-```
-
