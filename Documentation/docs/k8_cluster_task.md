@@ -52,5 +52,9 @@ sudo usermod -aG docker $USER && newgrp docker
 minikube config set driver docker
 
 minikube start --driver=docker
+
+minikube kubectl -- get po -A
+
+alias kubectl="minikube kubectl --"
 ```
 
