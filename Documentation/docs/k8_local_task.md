@@ -6,8 +6,6 @@
 - run all the code in one block
 - see below
 
-# future task
-[build an ingress controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
 
 # code block
 ```
@@ -99,3 +97,8 @@ spec:
     app: node
   type: NodePort # cluster - LoadBalancer
   ```
+
+
+  
+# future task
+[build an ingress controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)
