@@ -59,4 +59,3 @@ resource "aws_instance" "k8"{
 # add key
     key_name = var.key_id
 }
-*/
