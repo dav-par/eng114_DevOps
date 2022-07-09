@@ -4,5 +4,7 @@
 [IaC cloud task](/Documentation/docs/IaC_cloud_task.md)  
 
 # Terraform task
+- install terraform
+- save your access and secret key as environment variables
 - full automate two-tier arch
     - [scripts](/terraform)

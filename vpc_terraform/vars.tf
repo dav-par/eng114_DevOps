@@ -1,5 +1,5 @@
 variable "environment" {
-  default = "eng114-david-terra"
+  default = "david"
 }
 
 variable "vpc_cidr" {
@@ -24,5 +24,5 @@ variable "availability_zone" {
 }
 
 variable "key_id" {
-  default = "eng144_david_terra"
+  default = "david-ireland"
 }

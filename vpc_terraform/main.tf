@@ -3,13 +3,14 @@ provider "aws" {
 	region = "eu-west-1"
 }
 
+/*
 #resource block to configure test in
-resource "aws_instance" "test_instance"{
+resource "aws_instance" "test_-instance"{
 # choose your ami and instance type
 	ami = "ami-07b63aa1cfd3bc3a5"
 	instance_type = "t2.micro"
     subnet_id = "${aws_subnet.public_subnet.id}"
-    vpc_security_group_ids = ["${aws_security_group.eng114_david_sg_public.id}"]
+    vpc_security_group_ids = ["${aws_security_group.public.id}"]
 
 # enable a public ip
     associate_public_ip_address = true
@@ -22,3 +23,4 @@ resource "aws_instance" "test_instance"{
 # add key
     key_name = var.key_id
 }
+*/

@@ -1,4 +1,4 @@
-resource "aws_security_group" "eng114_david_sg_public"{
+resource "aws_security_group" "public"{
 	name = "eng114_david_sg_public"
 	vpc_id = aws_vpc.vpc.id
 
@@ -41,8 +41,8 @@ resource "aws_security_group" "eng114_david_sg_public"{
 
 }
 
-resource "aws_security_group" "eng114_david_sg_private"{
-	name = "eng114_david_sg_db_terra"
+resource "aws_security_group" "private"{
+	name = "eng114_david_sg_private"
 	description = "27017 for mongoDB"
 	vpc_id = aws_vpc.vpc.id
 
@@ -72,7 +72,7 @@ resource "aws_security_group" "eng114_david_sg_private"{
 	}
 
   tags = {
-    Name        = "${var.environment}-sg-db"
+    Name        = "${var.environment}-sg-private"
     Environment = "${var.environment}"
   }
 
