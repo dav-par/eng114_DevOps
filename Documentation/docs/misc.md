@@ -99,3 +99,19 @@ a forward proxy does...
 
 ## code snippets
 
+## install boto3
+```
+sudo apt install python
+
+sudo apt install python-pip -y
+
+sudo pip install --upgrade pip
+
+sudo pip install boto
+
+sudo pip install boto3
+```
+## scp pem key
+- `scp -i "david_eng114.pem" -r david_eng114.pem ubuntu@34.248.165.120:~/.ssh`
+- `sudo chmod 400 eng114.pem`
+    - set permission read permissions on server
