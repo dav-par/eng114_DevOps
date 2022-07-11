@@ -83,6 +83,18 @@
 - `*` and `?` are wild cards and good for finding files e.g. `find *.txt`
 - `:q` to quit a list
 
+## Script snippets 
+
+- This will find your ip and set it to a variable `var`
+```
+#!/bin/bash
+
+var=$(dig +short myip.opendns.com @resolver1.opendns.com)
+
+echo $var
+```
+
+
 
 ## Path
 PATH is an environmental variable in Linux and other Unix-like operating systems that tells the shell which directories to search for executable files (i.e., ready-to-run programs) in response to commands issued by a user. It increases both the convenience and the safety of such operating systems and is widely considered to be the single most important environmental variable. 

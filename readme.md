@@ -2,20 +2,19 @@
 I have started an intensive full-time DevOps course with Sparta Global, we have covered the below topics with more to come.
 
 # Index
-[Profile tips](/Documentation/docs/profile_tips.md)  
 [Terminal/Linux](/Documentation/docs/terminal.md)  
 [Git](/Documentation/docs/git_readme.md)  
-[Architecture](/Documentation/docs/Architecture.md)  
+[Architecture](/Documentation/docs/architecture.md)  
 [Kubernetes](/Documentation/docs/kubernetes.md)  - [K8 local task](/Documentation/docs/k8_local_task.md) - [K8 cloud task](/Documentation/docs/k8_cluster_task.md)   
 [Docker](/Documentation/docs/docker.md) - [task](/Documentation/docs/docker_task.md)  
-[Infrastructure as Code (IaC)](/Documentation/docs/IaC.md) - [IaC local task](/Documentation/docs/IaC_local_task.md) - [IaC hybrid task](/Documentation/docs/IaC_hybrid_task.md) - [IaC cloud task](/Documentation/docs/IaC_cloud_task.md) - [IaC Terraform task](/Documentation/docs/terraform.md)    
+[Infrastructure as Code (IaC)](/Documentation/docs/IaC.md) - [IaC local task](/Documentation/docs/IaC_local_task.md) - [IaC hybrid task](/Documentation/docs/IaC_hybrid_task.md) - [IaC cloud task](/Documentation/docs/IaC_cloud_task.md) - [IaC Terraform task](/Documentation/docs/terraform_task.md)    
 [Cloud Computing](/Documentation/docs/cloud_computing.md)  
 [Continuous Integration and Continuous Delivery (cicd)](/Documentation/docs/cicd.md) - [task](/Documentation/docs/cicd_task.md) - [jenkins setup](/Documentation/docs/jenkins_task.md)  
 [Amazon Web Services (AWS)](/Documentation/docs/aws.md) - [task](/Documentation/docs/aws_task.md)  
 [Virtual Private Cloud (VPC)](/Documentation/docs/vpc.md) - [task](/Documentation/docs/vpc_task.md)  
 [Vagrant](/Documentation/docs/vagrant.md) - [task](/Documentation/docs/vagrant_task.md)  
 [Object oriented programming](/Documentation/docs/oop.md)  
-[Python](/Documentation/docs/python_readme.md) - [code snippets](/Python/)  
+[Python](/Documentation/docs/python.md) - [code snippets](/Python/)  
 [Unit testing](/Documentation/docs/unit_testing.md)  
 [Misc notes](/Documentation/docs/misc.md)  
 #

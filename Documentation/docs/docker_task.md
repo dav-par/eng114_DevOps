@@ -19,7 +19,7 @@ FROM node
 LABEL MAINTAINER=dpark@spartaglobal.com
 
 
-#copy app to container
+# copy app to container
 WORKDIR /usr/src/app
 COPY app/ /usr/src/
 

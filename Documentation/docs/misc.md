@@ -31,9 +31,6 @@ An Entity Relationship (ER) Diagram is a type of flowchart that illustrates how 
 - transform the data to a workable state
 - load the data to where it's needed
 
-## HTTP Request
-- HTTP request is a method of getting data from a server
-
 ## Java script object notation JSON
 - https://www.json.org/json-en.html
 - The values must be:
@@ -49,21 +46,25 @@ An Entity Relationship (ER) Diagram is a type of flowchart that illustrates how 
 
 ## Software development life cycle
 
-## Trouble shooting
+### design tips
+- plan everything
+- automation is for saving time, if automating is taking longer then it may be better to do it manually
+- you should do the db first so the app can find it
+- sometimes there will be a problem with the code
+    - apply the 2min rule
+    - don't change the code unless it's a quick fix and the devs agree
+    - it's often best to send it back to the devs and ask what they want to do
+
+
+## Troubleshooting
 - vm finding script with ls but saying "not found" when trying to run:
     - check `+x` chmod, note it's postive `+` and not negative `-`
     - check the first line is correct `#` + `!` + `/` into `#!/bin/bash` 
 
-
-## microservices arc
-
-## kubernetes
--mangers docker apps
-
-
 ## future to do
 - aws certification
 - kubernetes certification
+- solutions associate arch level exam
 
 ## CRUD
 Create
@@ -72,8 +73,29 @@ Update
 Delete
 
 
+## Termanology
 service level agreement (sla)  
 service level objectives (slo)  
 service level indicators (sli)  
 site reliability engineer (sre)  
+
+## SREs
+- load testings
+- spike testing
+- stress testing
+- soak testing
+- nothing goes live without testing - core to your sdlc
+
+## pemkeys
+- Privacy Enhanced Mail (PEM) files are a type of Public Key Infrastructure (PKI) file used for keys and certificates.
+- with ansible/aws if you use a pem key wrong three times it will lock
+
+## proxies
+a proxy is 
+## reverse
+a reverse proxy does...
+## forward
+a forward proxy does...
+
+## code snippets
 

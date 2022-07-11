@@ -7,6 +7,18 @@
 - see below
 
 
+## set up
+- `swtich on k8 in docker desktop`
+- `kubectl get service - kubectl get ssvc`
+- `kubectl get deployment - kubectl get deploy`
+- `kubectl get pods`
+- `kubectl cluster-info`
+
+
+## Task
+- `kubectl create -f all.yml`
+  - once set up run the below code in a yaml file
+
 # code block
 ```
 apiVersion: apps/v1
@@ -97,8 +109,3 @@ spec:
     app: node
   type: NodePort # cluster - LoadBalancer
   ```
-
-
-  
-# future task
-[build an ingress controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/)

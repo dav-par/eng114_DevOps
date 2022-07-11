@@ -35,7 +35,12 @@ Docker is an open source platform for building, deploying, and managing containe
     - `-f` to force it
 - `docker exec -it <<CONTAINER ID>> bash`
     - runs bash on the container
-
+- `docker images`
+    - shows you the images you have downloaded
+- start
+- stop
+- exit
+- terminate
 
 ## notes
 - use `alias docker="winpty docker"` if `docker` command isn't working

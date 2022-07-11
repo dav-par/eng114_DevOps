@@ -72,7 +72,7 @@ AWS CLI is a unified tool to manage your AWS services. With just one tool to dow
     - Now use the keys to access s3
 
 
-## amazon machine images AMIs
+## Amazon machine images AMIs
 - these are images of a machine in a certain state
 - you can save your machine, terminate it and bring it back from an image
 - you may need to start some services up depending on how the image was saved
@@ -95,6 +95,11 @@ AWS CLI is a unified tool to manage your AWS services. With just one tool to dow
 - make your emergency plan part of sdlc
 - devops is monitoring  and fixing automatically
 
+## amazon cloudfront faq
+- https://aws.amazon.com/cloudfront/faqs/  
+- https://aws.amazon.com/cloudfront/features/?whats-new-cloudfront.sort-by=item.additionalFields.postDateTime&whats-new-cloudfront.sort-order=desc  
+
+
 ## Four golden rules
 The four golden signals of monitoring are latency, traffic, errors, and saturation. If you can only measure four metrics of your user-facing system, focus on these four. The time it takes to service a request. It's important to distinguish between the latency of successful requests and the latency of failed requests.  
 
@@ -107,7 +112,7 @@ The four golden signals of monitoring are latency, traffic, errors, and saturati
 - saturation
     - how 'full' your service is
 
-## services
+## Services
 - CLOUDWATCH
 - SNS simple notification service
 - SQS simple queue service
@@ -124,7 +129,6 @@ AWS Auto Scaling monitors your applications and automatically adjusts capacity t
 
 ## Autoscaler
 ![autoscaler](/Documentation/resources/aws/auto_scaler.jpeg)
-
 
 ## General notes
 - aws will issue a new ip to an instance if it's off for more than 30mins
