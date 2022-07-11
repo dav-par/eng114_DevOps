@@ -58,4 +58,6 @@ https://phoenixnap.com/kb/install-kubernetes-on-ubuntu
 
 
 sudo kubeadm init --pod-network-cidr=10.244.0.0/16
-```
+
+## notes
+https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/#install-kubectl-binary-with-curl-on-linux
