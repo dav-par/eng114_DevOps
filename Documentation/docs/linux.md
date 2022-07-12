@@ -8,25 +8,47 @@ debian - ubuntu
 Redhat - fedora and centos
 
 ## kernel
+heart of linux os
 core components:
-- resource allocation
+- resource allocation/scheduling running programs
 - file management
 - security
 
-## bootloader
--
+## What happens in kernel space:
+- device drivers run in the kernel
+- networking is implemented in the kernel
 
-## application libraries
--
+## User space:
+- programs e.g. shell, web browser 
+- programs in user space interact with the kernel via special devices or system calls that they make
 
-## package manager
--
+## processes
+- a running program is called a process
+- has its own virtual memory space
+- a process runs as a user and a set of groups
+- has a state
+    - running
+    - waiting to run
+    - blocked
+    
+## daemon process
+- not associated with the terminal
+- started up by the system
+- provide:
+    - networking
+    - special house keeping task to keep
+    
+## kernel threads
+- part of the kernel running as if they were a regular user process or system daemons
+- not associated with the terminal
+- show in square brackets when running `ps -ef` e.g. `[rcu_gp]`
 
-## utilities and applications
--
-
-## graphical user interface (gui)
--
+## other components
+- bootloader
+- application libraries
+- package manager
+- utilities and applications
+- graphical user interface (gui)
 
 ## Shell
 - used to interface with the os and execute commands
@@ -37,11 +59,12 @@ core components:
 - `#` - root (admin user)
 
 ## arguments
-- `-a` etc
-- single dash means abbreviated form
-- double dash
+- single dash means the option is an abbreviated form e.g. `-a`
+- double dash means the option is meant to be interpreted as an entire word e.g. `--version`
 
 ## manual pages (manpages)
 - gives information on how to execute commands and what they do
+- accessed by `man` followed by the command e.g. `man crontab`
 - `[ ]` gives us optional entities
-- `...` means you can make use of multiple options
+    - you can only use one argument if several are inside the square brackets
+- `...` (ellipsis) means you can make use of multiple options e.g. `ls file1 file2`
