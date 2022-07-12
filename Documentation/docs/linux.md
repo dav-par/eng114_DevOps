@@ -14,11 +14,11 @@ core components:
 - file management
 - security
 
-## What happens in kernel space:
+## kernal space:
 - device drivers run in the kernel
 - networking is implemented in the kernel
 
-## User space:
+## user space:
 - programs e.g. shell, web browser 
 - programs in user space interact with the kernel via special devices or system calls that they make
 
@@ -50,7 +50,7 @@ core components:
 - utilities and applications
 - graphical user interface (gui)
 
-## Shell
+## shell
 - used to interface with the os and execute commands
 - default is often bash
 
