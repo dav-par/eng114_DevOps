@@ -4,7 +4,7 @@ I have started an intensive full-time DevOps course with Sparta Global, we have 
 # Index
 [Terminal/Linux](/Documentation/docs/terminal.md)  
 [Git](/Documentation/docs/git_readme.md)  
-[Architecture](/Documentation/docs/architecture.md)  
+[Architecture](/Documentation/docs/1architecture.md)  
 [Kubernetes](/Documentation/docs/kubernetes.md)  - [K8 local task](/Documentation/docs/k8_local_task.md) - [K8 cloud task](/Documentation/docs/k8_cluster_task.md)   
 [Docker](/Documentation/docs/docker.md) - [task](/Documentation/docs/docker_task.md)  
 [Infrastructure as Code (IaC)](/Documentation/docs/IaC.md) - [IaC local task](/Documentation/docs/IaC_local_task.md) - [IaC hybrid task](/Documentation/docs/IaC_hybrid_task.md) - [IaC cloud task](/Documentation/docs/IaC_cloud_task.md) - [IaC Terraform task](/Documentation/docs/terraform_task.md)    
