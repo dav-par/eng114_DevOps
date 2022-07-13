@@ -1,7 +1,8 @@
-[link to index](/readme.md)  
+[index](/readme.md)  
+[IaC](/Documentation/docs/IaC.md)  
 [IaC local task](/Documentation/docs/IaC_local_task.md)  
-[IaC hybrid task](/Documentation/docs/IaC_hybrid_task.md)  
-[IaC Terraform task](/Documentation/docs/terraform.md)  
+[IaC hybrid task](/Documentation/docs/IaC_hybrid_task.md)
+
 # IaC cloud task
 set up an ansible controller which can automatically launch the app and db with a click 
 

@@ -1,7 +1,8 @@
-[link to index](/readme.md)  
-[IaC local task](/Documentation/docs/IaC_local_task.md)  
+[index](/readme.md)  
+[IaC](/Documentation/docs/IaC.md)  
+[IaC local task](/Documentation/docs/IaC_local_task.md)   
 [IaC cloud task](/Documentation/docs/IaC_cloud_task.md)  
-[IaC Terraform task](/Documentation/docs/terraform.md)  
+
 # IaC hybrid task
 controller local
 nodes online

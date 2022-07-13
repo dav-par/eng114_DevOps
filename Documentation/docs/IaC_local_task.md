@@ -1,33 +1,26 @@
-[link to index](/readme.md)  
+[index](/readme.md)  
+[IaC](/Documentation/docs/IaC.md)    
 [IaC hybrid task](/Documentation/docs/IaC_hybrid_task.md)  
 [IaC cloud task](/Documentation/docs/IaC_cloud_task.md)  
-[IaC Terraform task](/Documentation/docs/terraform.md)    
-# IaC task
-- set up 3 machines using vagrant
-    - [vagrant file](/IaC_ansible/original_vagrantfile)
-    - ssh in to each and update and upgrade
-    - `sudo apt update -y && sudo apt upgrade -y`
+
+# IaC local task
+Set up the app and db on two local virtual machines using a third virtual machine as an ansible controller.
+
+
+## Set up three machines
+- Use this [vagrant file](/IaC_ansible/original_vagrantfile) and name it Vagrantfile
+- ssh in to each and update and upgrade
+- `sudo apt update -y && sudo apt upgrade -y`
+- ssh into the controller
     - install ansible on the controller
-```
-sudo apt-get update -y
-	
-sudo apt-get install software-properties-common
-	
-sudo apt-add-repository ppa:ansible/ansible -y
-	
-sudo apt-get update
-	
-sudo apt-get install ansible -y
-```
-- ssh in to both machines manually from the controller to add the public keys
-- in the controller still
-- `ssh vagrant@192.168.33.10`
-- `yes`
-    - add key
-- `vagrant`
-    - password
-- same for db
-- configure them using ansible
+    - ssh into both machines manually from the controller to add them to your known hosts
+    - `ssh vagrant@192.168.33.10` (ip of app machine)
+    - `yes`
+        - adds the key to the known hosts
+    - `vagrant`
+        - password
+    - same for db
+- add the two machines to your host file
     - add web and db machine to the host file
     - `sudo nano /etc/ansible/hosts`
     - add to the bottom
@@ -38,22 +31,27 @@ sudo apt-get install ansible -y
 [db]
 192.168.33.11 ansible_connection=ssh ansible_ssh_user=vagrant ansible_ssh_pass=vagrant
 ```
-
 - `ansible all -m ping`
     - to test connection
     - should get green pong response
+
+## Configure the app and db using ansible playbooks
 - `cd /etc/ansible/`
     - navigate to ansible folder
 - `sudo git clone -b vagrant https://github.com/dav-par/working_ansible.git` to get the scripts
--  `sudo mv ansible/* ansible/.* .` - moves scripts down a level
+-  `sudo mv ansible/* ansible/.* .`
+    - moves scripts down a level
 - run these scripts on the controller
+    - ` ansible-playbook nginx.yml` etc
     - nginx, proxy, node, config 
 - they will set up the webserver
-- ` ansible-playbook nginx.yml` etc
+
+## check it works
 - ssh to web machine and run
     - cd app/app/
     - sudo npm install
     - npm start
+- go to http://192.168.33.10/posts on your web browser to see if it worked in full
 
 ## questions
 - why are we in the ansible folder
@@ -67,7 +65,6 @@ sudo apt-get install ansible -y
 - use this [vagrant file](/IaC_ansible/Vagrantfile) in a folder with this [provisioning script](/IaC_ansible/local_controller_pro.sh)
     - launches all three machines
     - updates && upgrades the web and db machine
-    - installs ansible on the controller
     - copies over the provisioning script to the controller and runs it there
 - the script
     - updates && upgrades

@@ -1,22 +1,49 @@
-# Ansible
-holding file for ansible content
+[index](/readme.md)  
+[IaC](/Documentation/docs/IaC.md)  
+[IaC local task](/Documentation/docs/IaC_local_task.md)  
+[IaC hybrid task](/Documentation/docs/IaC_hybrid_task.md)  
+[IaC cloud task](/Documentation/docs/IaC_cloud_task.md)  
+
+## Ansible
+- Ansible is an IT automation tool. It can configure systems, deploy software, and orchestrate more advanced IT tasks such as continuous deployments or zero downtime rolling updates. Ansible’s goals are foremost those of simplicity and maximum ease of use.
+
+- benefits
+    - Human readable automation (easy to use)
+        - YAML
+    - Powerful with a high level of configuration
+    - Agentless
+        - uses OpenSSH and WinRM
+        - runs on your controller, no need to install elsewhere
+    - cross-platform support
 
 ## Hostfile
-- this is your inventory of computers that ansible can connect too
-- layout
+This is your inventory of computers that ansible can connect to and interact with.
+
+example:
 ```
 [aws]
 ec2-instance ansible_host=63.34.20.247 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/eng114.pem
 ```
-- if you're having interrupter problems you can add:
+if you're having interrupter problems you can add:
 ```
 [local]
 localhost ansible_python_interpreter=/usr/local/bin/python3
 ```
+## Playbooks
+An Ansible® Playbook is a blueprint of automation tasks—which are complex IT actions executed with limited or no human involvement. Ansible Playbooks are executed on a set, group, or classification of hosts, which together make up an Ansible inventory.
+playbooks are written in yaml, also used by:
+- docker
+- compose
+- kubernetes
+- cloud formation
+- store them in /etc/ansible
 
+## Ansble ad-hoc command
+Ansible ad-hoc commands are a way to interact with the hosts without making a playbook.
+`ansible all -m ping`
+[adhoc cheat sheet](/Documentation/resources/IaC/Ansible-Cheat_Sheet_Edureka.pdf)
 
-
-- ## Security with aws
+## Security with aws
 You can set up three layers of security
 
 ### Ansible vault
@@ -49,6 +76,15 @@ aws_secret_key: <SECRET KEY>
 
 ### using the key
 `sudo ansible-playbook create_ec2.yml --ask-vault-pass --tags create_ex2`
-    - runs playbook (make playbook)
-<asks for password to vault>
+- runs playbook (make playbook)
+- asks for password to vault
 password
+
+## how to install
+```
+sudo apt-get update -y
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:ansible/ansible -y
+sudo apt-get update
+sudo apt-get install ansible -y
+```
