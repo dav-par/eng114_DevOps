@@ -1,23 +1,43 @@
 # Eng114_DevOps
-I have started an intensive full-time DevOps course with Sparta Global, we have covered the below topics with more to come.
+I have completed an intensive full-time DevOps course with Sparta Global, we covered the below topics.
 
 # Index
+## Core
 [Linux](/Documentation/docs/linux.md)  
 [Terminal](/Documentation/docs/terminal.md)  
 [Git](/Documentation/docs/git_readme.md)  
+
+## Architecture
 [Architecture](/Documentation/docs/architecture.md)  
-[Kubernetes](/Documentation/docs/kubernetes.md)  - [K8 local task](/Documentation/docs/k8_local_task.md) - [K8 cloud task](/Documentation/docs/k8_cluster_task.md)   
-[Docker](/Documentation/docs/docker.md) - [task](/Documentation/docs/docker_task.md)  
 [Cloud Computing](/Documentation/docs/cloud_computing.md)  
-[Continuous Integration and Continuous Delivery (cicd)](/Documentation/docs/cicd.md) - [task](/Documentation/docs/cicd_task.md) - [jenkins setup](/Documentation/docs/jenkins_task.md)  
 [Amazon Web Services (AWS)](/Documentation/docs/aws.md) - [task](/Documentation/docs/aws_task.md)  
 [Virtual Private Cloud (VPC)](/Documentation/docs/vpc.md) - [task](/Documentation/docs/vpc_task.md)  
 [Vagrant](/Documentation/docs/vagrant.md) - [task](/Documentation/docs/vagrant_task.md)  
+
+## Infrastructure as Code
+[Infrastructure as Code](/Documentation/docs/IaC.md)   
+[Terraform](/Documentation/docs/terraform.md)  
+[Ansible](/Documentation/docs/ansible.md)  
+[IaC local task](/Documentation/docs/IaC_local_task.md)  
+[IaC hybrid task](/Documentation/docs/IaC_hybrid_task.md)  
+[IaC cloud task](/Documentation/docs/IaC_cloud_task.md)  
+[IaC Terraform task](/Documentation/docs/IaC_terraform_task.md)   
+[Kubernetes](/Documentation/docs/kubernetes.md)  - [K8 local task](/Documentation/docs/k8_local_task.md) - [K8 cloud task](/Documentation/docs/k8_cluster_task.md)   
+[Docker](/Documentation/docs/docker.md) - [task](/Documentation/docs/docker_task.md)  
+
+
+## Continuous Integration and Continuous Delivery (CI/CD)
+[Continuous Integration and Continuous Delivery (cicd)](/Documentation/docs/cicd.md)  
+[cicd task](/Documentation/docs/cicd_task.md)  
+[Jenkins setup](/Documentation/docs/jenkins_task.md) 
+
+## Programming
 [Object oriented programming](/Documentation/docs/oop.md)  
 [Python](/Documentation/docs/python.md) - [code snippets](/Python/)  
+
+## Other
 [Unit testing](/Documentation/docs/unit_testing.md)  
 [Misc notes](/Documentation/docs/misc.md)  
-#
 
 ## What is DevOps  
 DevOps is about bridging the gap between the developers and operations, using communication and consultancy to remove the blame culture and shifting the philosophical approach to software development from a start-stop waterfall to an infinite loop of continuous improvement.
