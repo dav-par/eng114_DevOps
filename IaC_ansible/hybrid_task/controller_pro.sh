@@ -18,17 +18,10 @@ sudo pip install boto
 sudo pip install boto3
 
 sudo rm -rf /etc/ansible
-sudo git clone -b vagrant https://github.com/dav-par/working_ansible.git /etc/ansible
+sudo git clone https://github.com/dav-par/working_ansible.git /etc/ansible
 export ANSIBLE_HOST_KEY_CHECKING=False
 
 cd /etc/ansible
 sudo mkdir group_vars
 cd group_vars
 sudo mkdir all
-
-#cd /etc/ansible
-#ansible-playbook 1_nginx.yml
-#ansible-playbook 2_proxy.yml
-#ansible-playbook 3_nodejs.yml
-#ansible-playbook 4_mongo.yml
-#ansible-playbook 5_copy_app.yml

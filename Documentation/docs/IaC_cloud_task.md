@@ -4,21 +4,26 @@
 [IaC hybrid task](/Documentation/docs/IaC_hybrid_task.md)
 
 # IaC cloud task
-set up an ansible controller which can automatically launch the app and db with a click 
+set up the controller in the cloud which can create both the app and db instances on separate EC2s set
 
 ## set up the controller on ec2
-- [run the provisioning script](https://github.com/dav-par/eng114_DevOps/blob/main/IaC_ansible/controller_pro.sh)
-    - update && upgrade
-    - installs ansible
-    - installs python, pip and boto3
-    - git clones scripts and host file
-    - makes group_vars/all
-- `scp -i "david_eng114.pem" -r david_eng114.pem ubuntu@ec2-52-208-3-247.eu-west-1.compute.amazonaws.com:~/.ssh`
-    - run this on localhost from .ssh folder to copy your key to the ec2 instance
+- log in to aws and set up a controller EC2 instance
+    - with ubuntu 18.04
+    - that you can ssh into
+    - with this [user data](https://github.com/dav-par/eng114_DevOps/blob/main/IaC_ansible/cloud_task/controller_pro.sh)
+        - update && upgrade
+        - installs ansible
+        - installs python, pip and boto3
+        - git clones scripts and host file
+        - makes group_vars/all
+- scp the key you'll be using from a terminal in your local host .ssh folder
+    - `scp -i "david_eng114.pem" -r david_eng114.pem ubuntu@ec2-52-208-3-247.eu-west-1.compute.amazonaws.com:~/.ssh`
+
+## set up ansible vault and AWS access
 - ssh into the controller
 - `cd /etc/ansible/group_vars/all`
 - `sudo ansible-vault create pass.yml`
-    - set vault password
+    - creates a protected file that you edit with vim
     - press i
         - vim insert command
     - copy the code below and add your keys
@@ -29,8 +34,11 @@ aws_secret_key: <SECRET KEY>
 -    
     - press esc
     - type `:wq!`
+        - exits the vim editor and saves (writes)
     - `sudo cat pass.yml`
+        - should post random chars if working
     - `sudo chmod 666 pass.yml`
+        - means that all users can read and write but cannot execute the file/folder
     - `cd ~/.ssh`
     - `sudo chmod 400 david_eng114.pem`
     - ssh-keygen -t rsa
@@ -40,6 +48,10 @@ aws_secret_key: <SECRET KEY>
 - `cd /etc/ansible/` #moving scripts to right place
 - `sudo mv 7_create_app_ec2.sh group_vars/`
 - `sudo mv 8_create_db_ec2.sh group_vars/`
+
+
+
+
 
 ## prepare the playbooks
 - app playbook

@@ -4,11 +4,10 @@
 [IaC cloud task](/Documentation/docs/IaC_cloud_task.md)  
 
 # IaC local task
-Set up the app and db on two local virtual machines using a third virtual machine as an ansible controller.
-
+Set up the app and db on two local virtual machines using a third virtual machine as an ansible controller
 
 ## Set up three machines
-- Use this [vagrant file](/IaC_ansible/original_vagrantfile) and name it Vagrantfile
+- Use this [vagrant file](/IaC_ansible/local_task/Vagrantfile) which must be named VagrantFile
 - ssh in to each and update and upgrade
 - `sudo apt update -y && sudo apt upgrade -y`
 - ssh into the controller
@@ -38,7 +37,7 @@ Set up the app and db on two local virtual machines using a third virtual machin
 ## Configure the app and db using ansible playbooks
 - `cd /etc/ansible/`
     - navigate to ansible folder
-- `sudo git clone -b vagrant https://github.com/dav-par/working_ansible.git` to get the scripts
+- `sudo git clone -b vagrant https://github.com/dav-par/working_ansible.git` to get the scripts (this pulls the vagrant branch with scripts for a local set up)
 -  `sudo mv ansible/* ansible/.* .`
     - moves scripts down a level
 - run these scripts on the controller
@@ -56,13 +55,12 @@ Set up the app and db on two local virtual machines using a third virtual machin
 ## questions
 - why are we in the ansible folder
 - can we automate adding the ssh keys
-- can we update/upgrade in the vagrant file
 - can we automate gitclone and script running
 
 
 ## Updated task
 - fully automated from `vagrant up` 
-- use this [vagrant file](/IaC_ansible/Vagrantfile) in a folder with this [provisioning script](/IaC_ansible/local_controller_pro.sh)
+- use this [vagrant file](/IaC_ansible/local_task_updated/Vagrantfile) in a folder with this [provisioning script](/IaC_ansible/local_task_updated/local_controller_pro.sh)
     - launches all three machines
     - updates && upgrades the web and db machine
     - copies over the provisioning script to the controller and runs it there
