@@ -33,17 +33,17 @@ variable "availability_zone2" {
 }
 
 variable "key_id" {
-  default = "eng144_david_terra"
+  default = "david-ireland"
 }
 
 variable "app_ami" {
-  default = "ami-0fcb2ff41055e4a93"
+  default = "ami-07b63aa1cfd3bc3a5" ##"ami-0fcb2ff41055e4a93" - only works on sparta aws
 }
 
 variable "db_ami" {
-  default = "ami-075574b4670425b76"
+  default = "ami-07b63aa1cfd3bc3a5" ##"ami-075574b4670425b76" - only works on sparta aws
 }
 
 variable "controller_ami" {
-  default = "ami-0b756558a3243292d"
+  default = "ami-07b63aa1cfd3bc3a5" ##"ami-0b756558a3243292d" - onlt works on sparta aws
 }

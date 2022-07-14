@@ -2,7 +2,7 @@
 [IaC local task](/Documentation/docs/IaC_local_task.md)  
 [IaC hybrid task](/Documentation/docs/IaC_hybrid_task.md)  
 [IaC cloud task](/Documentation/docs/IaC_cloud_task.md)  
-[IaC Terraform task](/Documentation/docs/terraform_task.md)  
+[IaC Terraform task](/Documentation/docs/IaC_terraform_task.md)  
 [Terraform](/Documentation/docs/terraform.md)  
 [Ansible](/Documentation/docs/ansible.md)  
 

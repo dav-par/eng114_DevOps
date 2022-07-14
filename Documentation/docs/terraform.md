@@ -1,6 +1,6 @@
 [index](/readme.md)  
 [IaC](/Documentation/docs/IaC.md)  
-[IaC Terraform task](/Documentation/docs/terraform_task.md)  
+[IaC Terraform task](/Documentation/docs/IaC_terraform_task.md)  
  
 # Terraform
 - HashiCorp Terraform is an infrastructure as code tool that lets you define both cloud and on-prem resources in human-readable configuration files that you can version, reuse, and share.
@@ -26,3 +26,9 @@
 - `terraform destroy -target aws_instance.app_instance -target aws_instance.db_instance`
 
 ## how to install
+- [Hshicorp website](https://learn.hashicorp.com/tutorials/terraform/install-cli)  
+- download the right version of terraform
+- put the exe somewhere easy to get to e.g. "program files/terraform"
+- run the binary/exe
+- add the location to the $PATH
+- `terraform -help` to test it worked

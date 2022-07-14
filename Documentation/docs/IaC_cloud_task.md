@@ -14,7 +14,7 @@ set up the controller in the cloud which can create both the app and db instance
         - update && upgrade
         - installs ansible
         - installs python, pip and boto3
-        - git clones scripts and host file
+        - git clones scripts, host file and config files - [here](https://github.com/dav-par/working_ansible)
         - makes group_vars/all
 - scp the key you'll be using from a terminal in your local host .ssh folder
     - `scp -i "david_eng114.pem" -r david_eng114.pem ubuntu@ec2-52-208-3-247.eu-west-1.compute.amazonaws.com:~/.ssh`
@@ -33,7 +33,7 @@ aws_secret_key: <SECRET KEY>
 ```
 -    
     - press esc
-    - type `:wq!`
+    - type `:wq!` and press enter
         - exits the vim editor and saves (writes)
     - `sudo cat pass.yml`
         - should post random chars if working
@@ -45,27 +45,21 @@ aws_secret_key: <SECRET KEY>
     - eng114
     - enter
     - enter
-- `cd /etc/ansible/` #moving scripts to right place
-- `sudo mv 7_create_app_ec2.sh group_vars/`
-- `sudo mv 8_create_db_ec2.sh group_vars/`
-
-
-
-
 
 ## prepare the playbooks
-- app playbook
+- edit the app playbooks to include:
+    - correct key name
     - unique id
     - public subnet
     - security group for app on public subnet
     - refer to aws_access_key
     - correct pem key in ec2 provisioning 
 - same for db
+    - use a pre loaded db ami as it won't have internet access
     - private subnet and db security group
+- make sure the groups are named app and db in the hostfile
 
 ## run creation playbooks
-- [here](https://github.com/dav-par/working_ansible)
-- `cd /etc/ansible/group_vars`
 - `sudo ansible-playbook 7_create_app_ec2.sh --ask-vault-pass --tags create_ec2`
     - creates the ec2 for the app
     - vault password
@@ -73,18 +67,22 @@ aws_secret_key: <SECRET KEY>
     - creates the ec2 for the db
     - vault password
 
-## add to host file
-- app group
-    - `ec2-instance ansible_host=3.251.86.93 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/david_eng114.pem`
-- db2 group
-    - `ec2-instance2 ansible_host=3.251.86.93 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/david_eng114.pem`
+## add the EC2s to the host file
+- add the ip
+- add the ssh key
+```
+[app]
+app-ec2 ansible_host=54.194.156.130 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/eng114.pem
 
-## edit playbooks
-- change web to app in app playbooks
-- change db to db2 in db playbooks
+[db]
+db-ec2 ansible_host=172.31.26.178 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/eng114.pem`
+```
 
 ## run playbooks
 run playbooks in order 1 to 6
+
+## check it works
+go to the public ip of the app machine/posts to check
 
 ## errors
 - fatal: [localhost]: FAILED! => {"changed": false, "msg": "Instances with id(s) ['i-0c2154f122e72388c'] were created previously but have since been terminated - use a (possibly different) 'instanceid' parameter"}
