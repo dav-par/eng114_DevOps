@@ -5,7 +5,8 @@ I have completed an intensive full-time DevOps course with Sparta Global, we cov
 ## Core
 [Linux](/Documentation/docs/linux.md)  
 [Terminal](/Documentation/docs/terminal.md)  
-[Git](/Documentation/docs/git_readme.md)  
+[Git](/Documentation/docs/git.md)  
+[vim](/Documentation/docs/vim.md)  
 
 ## Architecture
 [Architecture](/Documentation/docs/architecture.md)  

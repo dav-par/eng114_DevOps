@@ -2,15 +2,16 @@
 
 # Linux
 kernel for open source os's
-
-debian - ubuntu
-
-Redhat - fedora and centos
+- Debian based
+    - ubuntu
+- Fedorda based
+    - Redhat
+    - centos
 
 ## kernel
 heart of linux os
 core components:
-- resource allocation/scheduling running programs
+- resource allocation/scheduling of running programs
 - file management
 - security
 
@@ -68,3 +69,25 @@ core components:
 - `[ ]` gives us optional entities
     - you can only use one argument if several are inside the square brackets
 - `...` (ellipsis) means you can make use of multiple options e.g. `ls file1 file2`
+
+## users
+a user has
+- uid
+    - user number
+- gid
+    - user primary group
+- groups
+    - supplementary groups
+
+### commands
+- useradd
+- userdel
+    - deletes the user but leaves the directory behind
+- usermod
+    - `-a` append
+    - `-aG group_b user_a` add `user_a` to `group_b`
+- groupapp
+- `id user_b`
+    - shows `user_b`'s info
+- `passwd user_b`
+    - change `user_b`'s password

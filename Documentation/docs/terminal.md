@@ -4,13 +4,15 @@
 ## Common directories
 - `/` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Root  
 - `/bin` &nbsp;&nbsp;&nbsp;&nbsp;- Binaries, executeable files
-- `/etc` &nbsp;&nbsp;&nbsp;&nbsp;- System config files
+    - `/sbin` for root only
+- `/etc` &nbsp;&nbsp;&nbsp;&nbsp;- extended text configurations
+    - config files
 - `/home` &nbsp;&nbsp;- Home directory, user accounts
 - `/opt` &nbsp;&nbsp;&nbsp;&nbsp;- Optional and third party software thats not
 - `/tmp` &nbsp;&nbsp;&nbsp;&nbsp;- Temp files, cleared every boot
-- `/usr` &nbsp;&nbsp;&nbsp;&nbsp;- User related programs
+- `/usr` &nbsp;&nbsp;&nbsp;&nbsp;- Unix system resources
 - `/var` &nbsp;&nbsp;&nbsp;&nbsp;- Variable data, usually log files
-- `/boot` &nbsp;&nbsp;- files for booting
+- `/boot` &nbsp;&nbsp;- files for booting including kernal
 - `/dev` &nbsp;&nbsp;&nbsp;&nbsp;- Device files
 
 ## Users
@@ -32,11 +34,13 @@
     - `-R` for recursive listing
     - `-t` sort by time
 - `sudo` - as admin
+    - `-u user_c COMMAND` to run `COMMAND` as `user_c`
 - `sudo apt-get` `update` and `upgrade` - update fetches the latest version of the package list from your distro's software repository, and any third-party repositories you may have configured using the package manager `apt-get`
 - `sudo apt-get install packagename -y` to install a package and skip the yes/no confirm
 - `history` - see what you've typed so far
 - `systemctl status packagename` - check the status of a package 
 - `sudo systemctl stop packagename` - stop a package running as admin
+- 
 - `who am i` - user details
 - `uname` - os details, `-a` for all details
 - `pwd` -  what folder are you in
@@ -67,11 +71,15 @@
 - `sudo apt-get remove nginx` stop nginx
     - https://linuxconfig.org/how-to-remove-nginx-from-ubuntu
 - `sudo apt purge nginx` #TODO
-
+- `ln`  make link
+    - `-s` for symbolic
+- `whereis COMMAND` find where a program/command is
+- `grep`
 
 ## General tips
 - use `tab` to auto complete
 - `ctrl-x` or `ctrl-c` will quit most things
+- `ctrl-d` is logout
 - `~` is short for home directory
 - `enter` to see one more line in a page
 - `spacebar` to see next page in list
