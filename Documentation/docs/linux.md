@@ -37,7 +37,7 @@ core components:
 - started up by the system
 - provide:
     - networking
-    - special house keeping task to keep
+    - special housekeeping tasks
     
 ## kernel threads
 - part of the kernel running as if they were a regular user process or system daemons
@@ -91,3 +91,32 @@ a user has
     - shows `user_b`'s info
 - `passwd user_b`
     - change `user_b`'s password
+
+## file permissions
+![permissions](/Documentation/resources/linux/file_permissions.png)  
+- files have 10 bits associated with them  
+permissions are processed in order and stop as soon as a match is found
+- first bit
+    - `d` directory
+    - `l` link
+    - `b` block
+    - `-` regular file
+- next three
+    - user who created the file 
+- next three
+    - the creating user's primary group
+- next three
+    - other users access
+    - everyone who is not the owning user or in the primary group
+- `ls -ld` to see permissions of a directory
+
+
+### commands
+- chmod to change ownership setting
+    - `chmod u-rwx /common`
+        - change the `u`ser ownership settings, removing `r`ead, `w`riting and `e`xecute permissions to `/common` for the owning user
+- chown to change ownership group
+
+## networking
+- network-manager
+- `nmcli` network manager command line interface 
