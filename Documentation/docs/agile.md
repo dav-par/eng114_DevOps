@@ -46,8 +46,9 @@ Agile is an iterative approach to project management and software development th
 - simple form of agile dev
 - define flow of work
 - kanban board
-- no sprints, goal is smooth flow of work
-
+- no sprints, goal is a smooth flow of work
+- limits on WIP
+- good for support tickets and unpredictable dev
 
 ## Disaster recovery plan
 - Always have a plan for if it goes wrong

@@ -8,6 +8,10 @@ I have completed an intensive full-time DevOps course with Sparta Global, we cov
 [Git](/Documentation/docs/git.md)  
 [vim](/Documentation/docs/vim.md)  
 
+## Business
+- [agile (scrum/kanban)](/Documentation/docs/agile.md)  
+- [jira](/Documentation/docs/jira.md)  
+
 ## Architecture
 [Architecture](/Documentation/docs/architecture.md)  
 [Cloud Computing](/Documentation/docs/cloud_computing.md)  
@@ -37,8 +41,11 @@ I have completed an intensive full-time DevOps course with Sparta Global, we cov
 [Python](/Documentation/docs/python.md) - [code snippets](/Python/)  
 
 ## Other
+[project - todo](/Documentation/docs/project.md)  
 [Unit testing](/Documentation/docs/unit_testing.md)  
-[Misc notes](/Documentation/docs/misc.md)  
+[mongodb](/Documentation/docs/mongodb.md)  
+[promethues](/Documentation/docs/promethues.md)  
+[misc notes](/Documentation/docs/misc.md)  
 
 ## What is DevOps  
 DevOps is about bridging the gap between the developers and operations, using communication and consultancy to remove the blame culture and shifting the philosophical approach to software development from a start-stop waterfall to an infinite loop of continuous improvement.
