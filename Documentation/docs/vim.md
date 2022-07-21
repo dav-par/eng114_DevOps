@@ -18,6 +18,8 @@ powerful text editor
         - edit text directly
     - press o
         - edit text starting at a new line
+- replace mode
+    - `shift-r`
 
 ## navigation
 - `h` `j` `k` `l`
@@ -77,7 +79,27 @@ powerful text editor
     - undo
 - `ctrl-r`
     - redo
+- `fA`
+    - goes to the first `A`
+    - `;` repeats the search in the same direction
+    - `,` repeats the search in the opposite direction
+- `/and`
+    - find next `and`
+    - `n` to find next `and`
+    - `N` find the previous `and`
+- `:s/and/&`
+    - substitutes `and` with `&` on the current line 
+- `:%`
+    - apply command to whole file
+- `set: nu`
+    - show line number
+-  `:[range]s/{pattern}/{string}/[flags]
+    - replaces the pattern with the string in the range specified
+- `J`
+    - join lines
+
 ## help
+- `:help`
 - navigation
     - `ctrl-o` back a page
     - `ctrl i` forwards a page
@@ -98,6 +120,13 @@ powerful text editor
 - append with captials
     - `"Jyy"`
         - add yanked line to register j
+
+## text objects
+-`{operator}a{object}`
+    - `daw` delete a word
+- `{operator}i{object}`
+    - `ciw` change inner word
+    -`ci]` change inside `[]` brackets 
 
 ## commands outside command mode
 = shift and `zz`

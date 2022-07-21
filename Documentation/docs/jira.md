@@ -13,7 +13,7 @@ a work management tool made by Atlassian
     - quick
     - subscription service
 - data centr3
-    - for enterprise level customers
+    - for enterprise-level customers
 - server
     - discontinued
 
