@@ -20,6 +20,10 @@ powerful text editor
         - edit text starting at a new line
 - replace mode
     - `shift-r`
+- visual mode
+    - `v` for characterwise
+    - `V` for linewise
+    - `ctrl-v for blockwise
 
 ## navigation
 - `h` `j` `k` `l`
@@ -127,6 +131,14 @@ powerful text editor
 - `{operator}i{object}`
     - `ciw` change inner word
     -`ci]` change inside `[]` brackets 
+
+## macros
+- complex edit
+- register of keystroke
+- `qa`
+    - record macro to register `a`
+- `@a`
+    - play macro `a`
 
 ## commands outside command mode
 = shift and `zz`
