@@ -25,6 +25,27 @@ powerful text editor
     - `V` for linewise
     - `ctrl-v for blockwise
 
+## vimrc
+- file with saved config file
+- loads each time
+
+## buffer
+- temp space in memory where files are kept till you save them
+- you can open several files at once
+- `:buffers`/`:ls`
+    - show buffers
+- `:b3`
+    - open buffer 3
+
+## windows
+- vim is a view of a buffer
+- `:sp`
+    - open another window
+- `:vs`
+    - vertical split
+- `ctrl-w-w`
+    - change window
+
 ## navigation
 - `h` `j` `k` `l`
     - arrow keys
